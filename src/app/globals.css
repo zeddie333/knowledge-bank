@@ -86,22 +86,44 @@
     @apply prose prose-base dark:prose-invert;
   }
 
-  /* Quizlet-style interaction: subtle lift, shadow growth, press feedback. */
+  /* Quizlet-style interaction: subtle lift, shadow growth, press feedback,
+     and a soft ring that suggests focus without shouting. */
   .qz-interactive {
-    transition: transform 140ms cubic-bezier(0.2, 0.7, 0.2, 1),
-                box-shadow 140ms cubic-bezier(0.2, 0.7, 0.2, 1),
-                border-color 140ms ease;
+    transition: transform 160ms cubic-bezier(0.2, 0.7, 0.2, 1),
+                box-shadow 160ms cubic-bezier(0.2, 0.7, 0.2, 1),
+                border-color 160ms ease;
     will-change: transform;
   }
   .qz-interactive:hover {
     transform: translateY(-2px);
+    border-color: hsl(var(--foreground) / 0.35);
     box-shadow:
       0 1px 0 0 hsl(var(--border)),
-      0 6px 14px -8px rgba(0, 0, 0, 0.18);
+      0 10px 20px -10px rgba(0, 0, 0, 0.22),
+      0 0 0 1px hsl(var(--foreground) / 0.04);
   }
   .qz-interactive:active {
     transform: translateY(0) scale(0.985);
     transition-duration: 80ms;
+  }
+
+  /* Shimmer for skeleton placeholders. */
+  @keyframes qz-shimmer {
+    0% { background-position: -160px 0; }
+    100% { background-position: 320px 0; }
+  }
+  .qz-skeleton {
+    background-color: hsl(var(--muted));
+    background-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--foreground) / 0.04) 50%,
+      transparent 100%
+    );
+    background-size: 320px 100%;
+    background-repeat: no-repeat;
+    animation: qz-shimmer 1.4s ease-in-out infinite;
+    border-radius: 6px;
   }
 
   /* Lighter version for tags and inline chips. */

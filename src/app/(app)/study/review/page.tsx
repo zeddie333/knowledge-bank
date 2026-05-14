@@ -32,6 +32,20 @@ export default function ReviewSession() {
   const [flipped, setFlipped] = React.useState(false);
   const [doneCount, setDoneCount] = React.useState(0);
 
+  // Keyboard nav: Space/Enter to flip; 1/2/3/4 to grade once revealed.
+  React.useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA") return;
+      if (e.code === "Space" || e.code === "Enter") {
+        e.preventDefault();
+        setFlipped((f) => !f);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
   if (!hydrated || queueIds === null) {
     return <SkeletonCard />;
   }

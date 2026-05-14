@@ -45,7 +45,7 @@ export default function ClassroomPage() {
     if (regions.size > 0 && !regions.has(p.region)) return false;
     if (!themeMatches(p.themes)) return false;
     return true;
-  });
+  }).slice().sort((a, b) => a.name.localeCompare(b.name));
 
   // Concepts: have a single theme but no era/region of their own.
   // We use the *associated philosophers* to inherit era/region constraints.
@@ -64,7 +64,7 @@ export default function ClassroomPage() {
         (eras.size === 0 || eras.has(p.era)) &&
         (regions.size === 0 || regions.has(p.region)),
     );
-  });
+  }).slice().sort((a, b) => a.name.localeCompare(b.name));
 
   // Schools: have their own region; era inferred from eraStart.
   const eraFromStart = (start: number): Era =>
@@ -88,14 +88,14 @@ export default function ClassroomPage() {
       if (!linked.some((p) => themeMatches(p.themes))) return false;
     }
     return true;
-  });
+  }).slice().sort((a, b) => a.name.localeCompare(b.name));
 
   const texts = TEXTS.filter((t) => {
     if (eras.size > 0 && (!t.era || !eras.has(t.era))) return false;
     if (regions.size > 0 && (!t.region || !regions.has(t.region))) return false;
     if (themes.size > 0 && !(t.themes ?? []).some((th) => themes.has(th))) return false;
     return true;
-  });
+  }).slice().sort((a, b) => a.title.localeCompare(b.title));
 
   const activeCount = themes.size + eras.size + regions.size;
 

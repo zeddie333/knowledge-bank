@@ -17,6 +17,7 @@ import { ReadLaterButton } from "@/components/read-later-button";
 import { FinishButton } from "@/components/finish-button";
 import { MakeFlashcardsButton } from "@/components/make-flashcards-button";
 import { Portrait } from "@/components/portrait";
+import { KnownFor } from "@/components/known-for";
 import { useStore } from "@/lib/store";
 
 export default function PhilosopherPage() {
@@ -61,6 +62,8 @@ export default function PhilosopherPage() {
         <div className="prose-reading max-w-prose font-serif">
           {renderMarkdown(philosopher.fullBody)}
         </div>
+
+        <KnownFor philosopherId={philosopher.id} />
 
         {quotes.length > 0 && (
           <section className="mt-12">

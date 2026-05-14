@@ -3,11 +3,12 @@
 import Link from "next/link";
 import * as React from "react";
 import { useRouter } from "next/navigation";
-import { Shuffle, Search, Flame, Sparkles, BookOpen } from "lucide-react";
+import { Shuffle, Flame, Sparkles, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
+import { TempleLogo } from "@/components/logo";
+import { HomeSearch } from "@/components/home-search";
 import { XpBar } from "@/components/xp-bar";
 import { PhilosopherCard } from "@/components/philosopher-card";
 import { useStore, useHydrated } from "@/lib/store";
@@ -33,7 +34,6 @@ export default function HomePage() {
   const themesOfInterest = useStore((s) => s.themesOfInterest);
   const reviews = useStore((s) => s.reviews);
   const progress = useStore((s) => s.progress);
-  const [query, setQuery] = React.useState("");
 
   const due = React.useMemo(() => dueCount(Object.values(reviews)), [reviews]);
 
@@ -66,36 +66,25 @@ export default function HomePage() {
     router.push(`/classroom/philosophers/${p.slug}`);
   };
 
-  const submitSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (query.trim()) router.push(`/search?q=${encodeURIComponent(query.trim())}`);
-    else router.push("/search");
-  };
-
   return (
     <div className="space-y-8">
-      {/* Search bar — first thing on the page now, sticky on scroll. */}
-      <form
-        onSubmit={submitSearch}
-        className="sticky top-0 z-10 -mx-5 -mt-6 bg-background/95 backdrop-blur px-5 py-4 sm:-mx-8 sm:px-8 lg:-mx-10 lg:px-10"
-      >
-        <div className="relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-          <Input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search philosophers, concepts, schools, quotes…"
-            className="h-11 pl-10"
-          />
-        </div>
-      </form>
+      <HomeSearch />
 
-      <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <p className="font-sans text-xs uppercase tracking-widest text-muted-foreground">Today</p>
-          <h1 className="mt-1 font-serif text-3xl tracking-tight">
-            {hydrated && username ? `Welcome back, ${username}.` : "Welcome back."}
-          </h1>
+      {/* Brand block — pediment logo above the wordmark, both in the title color. */}
+      <header className="flex flex-col items-start gap-8 sm:flex-row sm:items-end sm:justify-between">
+        <div className="w-full">
+          <div className="flex flex-col items-start text-foreground">
+            <TempleLogo className="h-20 w-auto sm:h-24" />
+            <h1 className="mt-3 font-serif text-5xl leading-none tracking-tight sm:text-6xl">
+              Knowledge Bank
+            </h1>
+          </div>
+          <div className="mt-8">
+            <p className="font-sans text-xs uppercase tracking-widest text-muted-foreground">Today</p>
+            <p className="mt-1 font-serif text-2xl tracking-tight">
+              {hydrated && username ? `Welcome back, ${username}.` : "Welcome back."}
+            </p>
+          </div>
         </div>
         <div className="flex items-center gap-3">
           <Badge variant={streakDays > 0 ? "accent" : "outline"} className="font-sans">

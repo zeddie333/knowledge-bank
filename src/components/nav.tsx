@@ -14,6 +14,7 @@ import {
   Beaker,
 } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { TempleLogo } from "@/components/logo";
 import { useStore, useHydrated } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -67,9 +68,10 @@ export function Nav() {
 
   return (
     <aside className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0 lg:left-0 lg:border-r lg:border-border lg:bg-card/40">
-      <div className="flex h-16 items-center px-6 border-b border-border">
-        <Link href="/home" className="flex items-baseline gap-2">
-          <span className="font-serif text-lg tracking-tight">Knowledge Bank</span>
+      <div className="flex h-16 items-center gap-3 px-6 border-b border-border">
+        <Link href="/home" className="flex items-center gap-2.5 text-foreground">
+          <TempleLogo className="h-7 w-auto shrink-0" strokeWidth={2.5} />
+          <span className="font-serif text-lg leading-none tracking-tight">Knowledge Bank</span>
         </Link>
       </div>
       <nav className="flex-1 overflow-y-auto px-3 py-4">

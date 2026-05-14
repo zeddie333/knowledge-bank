@@ -6,6 +6,7 @@ import { AuthGate } from "@/components/auth-gate";
 import { Nav, MobileNav } from "@/components/nav";
 import { BackButton } from "@/components/back-button";
 import { PageTransition } from "@/components/page-transition";
+import { XpToast } from "@/components/xp-toast";
 
 export default function AppLayout({ children }: { children: ReactNode }) {
   return (
@@ -21,6 +22,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
           </div>
         </main>
         <MobileNav />
+        <XpToast />
       </div>
     </AuthGate>
   );
