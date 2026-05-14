@@ -1,0 +1,119 @@
+// Centralized image lookup for non-philosopher content. Keeps data files
+// small and lets a single source provide imagery while we expand.
+
+import { wikiImage } from "@/lib/wiki";
+
+// Public-domain Wikimedia Commons images. If a filename has been renamed,
+// the Portrait component falls back to a typographic monogram automatically.
+
+export const SCHOOL_IMAGES: Record<string, string> = {
+  "pre-socratics": wikiImage("Sanzio_01_Plato_Aristotle.jpg"),
+  "sophism": wikiImage("Plato_-_Protagoras_Frontispiece_-_BOOM7P.jpg"),
+  "platonism": wikiImage("\"The_School_of_Athens\"_by_Raffaello_Sanzio_da_Urbino.jpg"),
+  "peripatetic": wikiImage("Lyceum_-_Aristotle's_school_in_Athens.jpg"),
+  "stoicism": wikiImage("Stoa_of_Attalos_in_2008_2.jpg"),
+  "epicureanism": wikiImage("Bust_of_Epicurus,_British_Museum.jpg"),
+  "cynicism": wikiImage("Diogenes_looking_for_a_man_-_attributed_to_JHW_Tischbein.jpg"),
+  "academic-skepticism": wikiImage("Plato's_Academy_mosaic_from_Pompeii.jpg"),
+  "neoplatonism": wikiImage("Plotinos.jpg"),
+  "scholasticism": wikiImage("Laurentius_de_Voltolina_001.jpg"),
+  "thomism": wikiImage("St-thomas-aquinas.jpg"),
+  "falsafa": wikiImage("Maqamat_hariri.jpg"),
+  "sufism": wikiImage("Whirling_dervishes,_at_Rumi_Fest_2007.jpg"),
+  "advaita-vedanta": wikiImage("Raja_Ravi_Varma_-_Sankaracharya.jpg"),
+  "madhyamaka": wikiImage("Nagarjuna_with_Mahasiddhas.JPG"),
+  "yogacara": wikiImage("Asanga_thangka.jpg"),
+  "nyaya": wikiImage("Akshapada_Gautam_Sutra.jpg"),
+  "confucianism": wikiImage("Confucius_Tang_Dynasty.jpg"),
+  "neo-confucianism": wikiImage("Zhu_Xi_at_court_event.jpg"),
+  "daoism": wikiImage("Yin_yang.svg"),
+  "legalism": wikiImage("Hanfeizi.jpg"),
+  "chan-zen": wikiImage("Bodhidharma.jpg"),
+  "renaissance-humanism": wikiImage("Sanzio_01.jpg"),
+  "rationalism": wikiImage("Frans_Hals_-_Portret_van_René_Descartes.jpg"),
+  "empiricism": wikiImage("John_Locke.jpg"),
+  "enlightenment": wikiImage("Reading_of_Voltaire's_tragedy_of_the_Orphan_of_China_in_the_salon_of_Marie_Thérèse_Rodet_Geoffrin_in_1755_by_Lemonnier.jpg"),
+  "german-idealism": wikiImage("Hegel_portrait_by_Schlesinger_1831.jpg"),
+  "utilitarianism": wikiImage("Jeremy_Bentham_by_Henry_William_Pickersgill_detail.jpg"),
+  "marxism": wikiImage("Karl_Marx_001.jpg"),
+  "pragmatism": wikiImage("William_James_b1842c.jpg"),
+  "phenomenology": wikiImage("Edmund_Husserl_1900.jpg"),
+  "existentialism": wikiImage("Sartre_1967_crop.jpg"),
+  "logical-positivism": wikiImage("Vienna_Circle.png"),
+  "analytic-philosophy": wikiImage("Bertrand_Russell_1957.jpg"),
+  "frankfurt-school": wikiImage("AdornoHorkheimerHabermasbyJeremyJShapiro2.png"),
+  "structuralism": wikiImage("Levi-strauss_260.jpg"),
+  "post-structuralism": wikiImage("Michel_Foucault_1974_Brasil.jpg"),
+  "postmodernism": wikiImage("Jean-François_Lyotard_cropped.jpg"),
+  "feminist-philosophy": wikiImage("Simone_de_Beauvoir2.png"),
+  "postcolonial-theory": wikiImage("Edward_Said.jpg"),
+  "africana-philosophy": wikiImage("W.E.B._Du_Bois_by_James_E._Purdy,_1907.jpg"),
+  "speculative-realism": wikiImage("Quentin_Meillassoux_au_marathon_du_savoir_du_Festival_d'Avignon_2016.jpg"),
+  "kyoto-school": wikiImage("Kitaro_Nishida.jpg"),
+};
+
+export const CONCEPT_IMAGES: Record<string, string> = {
+  "theory-of-forms": wikiImage("\"The_School_of_Athens\"_by_Raffaello_Sanzio_da_Urbino.jpg"),
+  "eudaimonia": wikiImage("Aristotle_Altemps_Inv8575.jpg"),
+  "amor-fati": wikiImage("Nietzsche187a.jpg"),
+  "sunyata": wikiImage("Lotus_flower_(978659).jpg"),
+  "bad-faith": wikiImage("Jean-Paul_Sartre_FP.JPG"),
+  "categorical-imperative": wikiImage("Immanuel_Kant_(painted_portrait).jpg"),
+  "the-other": wikiImage("Simone_de_Beauvoir2.png"),
+  "cogito": wikiImage("Frans_Hals_-_Portret_van_René_Descartes.jpg"),
+  "eternal-recurrence": wikiImage("Ouroboros.png"),
+  "will-to-power": wikiImage("Nietzsche187a.jpg"),
+  "ressentiment": wikiImage("Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg"),
+  "dasein": wikiImage("Heidegger_2_(1960).jpg"),
+  "phenomenology-method": wikiImage("Edmund_Husserl_1900.jpg"),
+  "panopticon": wikiImage("Panopticon.jpg"),
+  "biopolitics": wikiImage("Michel_Foucault_1974_Brasil.jpg"),
+  "differance": wikiImage("Jacques_Derrida_(1930-2004).jpg"),
+  "simulacrum": wikiImage("Jean_Baudrillard_(cropped).jpg"),
+  "alienation": wikiImage("Karl_Marx_001.jpg"),
+  "general-will": wikiImage("Jean-Jacques_Rousseau_(painted_portrait).jpg"),
+  "veil-of-ignorance": wikiImage("John_Rawls_(1971_photo_portrait).jpg"),
+  "qualia": wikiImage("Color_circle_(hue-sat).png"),
+  "mind-body-problem": wikiImage("Descartes_mind_and_body.gif"),
+  "free-will-determinism": wikiImage("Pierre-Simon_Laplace.jpg"),
+  "tao": wikiImage("Yin_yang.svg"),
+  "ren": wikiImage("Confucius_Tang_Dynasty.jpg"),
+  "wu-wei": wikiImage("Lao_Tzu_-_Project_Gutenberg_eText_15250.jpg"),
+  "karma": wikiImage("Dharma_Wheel.svg"),
+  "brahman-atman": wikiImage("Aum_Om_red.svg"),
+  "performativity": wikiImage("Judith_butler_in_2012_(8295328593).jpg"),
+  "subaltern": wikiImage("Gayatri_Chakravorty_Spivak_at_Goldsmiths_College.JPG"),
+  "orientalism": wikiImage("Edward_Said.jpg"),
+  "natural-law": wikiImage("St-thomas-aquinas.jpg"),
+  "dialectic": wikiImage("Hegel_portrait_by_Schlesinger_1831.jpg"),
+  "social-contract": wikiImage("Leviathan_by_Thomas_Hobbes.jpg"),
+  "two-truths": wikiImage("Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg"),
+  "intentionality": wikiImage("Edmund_Husserl_1900.jpg"),
+  "verification-principle": wikiImage("Vienna_Circle.png"),
+  "paradigm-shift": wikiImage("Kuhn.jpg"),
+};
+
+export const TE_IMAGES: Record<string, string> = {
+  "the-trolley-problem": wikiImage("Trolley_Problem.svg"),
+  "ship-of-theseus": wikiImage("Argo_Konstantinos_Volanakis.jpg"),
+  "marys-room": wikiImage("Color_circle_(hue-sat).png"),
+  "veil-of-ignorance": wikiImage("John_Rawls_(1971_photo_portrait).jpg"),
+  "platos-cave": wikiImage("An_Illustration_of_The_Allegory_of_the_Cave,_from_Plato’s_Republic.jpg"),
+  "chinese-room": wikiImage("John_searle2.jpg"),
+  "experience-machine": wikiImage("Robert_nozick.jpg"),
+  "twin-earth": wikiImage("Earth_Eastern_Hemisphere.jpg"),
+  "zhuangzi-butterfly": wikiImage("Zhuangzi-Butterfly-Dream.jpg"),
+  "the-violinist": wikiImage("Violinist_by_Jules_Pascin.jpg"),
+  "the-runaway-tram": wikiImage("Tramway_Glasgow_1960s.jpg"),
+  "the-lottery": wikiImage("Lottery_balls.jpg"),
+};
+
+export function schoolImage(slug: string): string | null {
+  return SCHOOL_IMAGES[slug] ?? null;
+}
+export function conceptImage(slug: string): string | null {
+  return CONCEPT_IMAGES[slug] ?? null;
+}
+export function teImage(slug: string): string | null {
+  return TE_IMAGES[slug] ?? null;
+}

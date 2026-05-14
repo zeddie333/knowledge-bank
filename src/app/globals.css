@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Pure monochrome. White paper, black ink. No accent color —
+       hierarchy comes from weight, size, and underlines. */
+    --background: 0 0% 100%;          /* #FFFFFF */
+    --foreground: 0 0% 6%;            /* near-black ink */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 6%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 38%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 0 0% 6%;
+    --primary: 0 0% 6%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 6%;
+    /* Accent reused throughout the codebase; here it just resolves
+       to ink so existing "bg-accent" etc. stay monochrome. */
+    --accent: 0 0% 6%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 0% 6%;
+    --destructive-foreground: 0 0% 100%;
+    /* "Due" indicator — semantic, but kept grayscale (uses underline
+       elsewhere where mere color would have carried the meaning). */
+    --due: 0 0% 6%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 4%;            /* near-black */
+    --foreground: 0 0% 97%;           /* near-white */
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 97%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 0 0% 97%;
+    --primary: 0 0% 97%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 97%;
+    --accent: 0 0% 97%;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 0% 97%;
+    --destructive-foreground: 0 0% 4%;
+    --due: 0 0% 97%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground font-serif;
+    font-feature-settings: "ss01", "ss02";
+  }
+
+  button, input, select, textarea, label, nav, header, footer {
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background-color: hsl(var(--foreground));
+    color: hsl(var(--background));
+  }
+}
+
+@layer utilities {
+  .prose-reading {
+    @apply prose prose-base dark:prose-invert;
+  }
+
+  /* Quizlet-style interaction: subtle lift, shadow growth, press feedback. */
+  .qz-interactive {
+    transition: transform 140ms cubic-bezier(0.2, 0.7, 0.2, 1),
+                box-shadow 140ms cubic-bezier(0.2, 0.7, 0.2, 1),
+                border-color 140ms ease;
+    will-change: transform;
+  }
+  .qz-interactive:hover {
+    transform: translateY(-2px);
+    box-shadow:
+      0 1px 0 0 hsl(var(--border)),
+      0 6px 14px -8px rgba(0, 0, 0, 0.18);
+  }
+  .qz-interactive:active {
+    transform: translateY(0) scale(0.985);
+    transition-duration: 80ms;
+  }
+
+  /* Lighter version for tags and inline chips. */
+  .qz-chip {
+    transition: transform 100ms ease, background-color 140ms ease, color 140ms ease, border-color 140ms ease;
+  }
+  .qz-chip:hover {
+    transform: translateY(-1px);
+  }
+  .qz-chip:active {
+    transform: translateY(0) scale(0.96);
+  }
+
+  /* Card flip wrapper for study cards. */
+  .qz-flip-shell {
+    perspective: 1200px;
+  }
+  .qz-flip {
+    transform-style: preserve-3d;
+    transition: transform 300ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .qz-flip.is-flipped {
+    transform: rotateY(180deg);
+  }
+  .qz-face {
+    backface-visibility: hidden;
+  }
+  .qz-face-back {
+    transform: rotateY(180deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
