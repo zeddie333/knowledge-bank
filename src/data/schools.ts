@@ -739,6 +739,64 @@ The participants — Meillassoux, Graham Harman, Ray Brassier, Iain Hamilton Gra
 The movement has been productive — particularly Harman's OOO, which has been picked up in architecture, art criticism, and the environmental humanities — and contested. It remains a recognizably contemporary movement rather than a settled school.`,
   },
   {
+    id: "perennialism",
+    slug: "perennialism",
+    name: "Perennialism (Traditionalist School)",
+    eraStart: 1920,
+    eraEnd: null,
+    region: "european",
+    philosopherIds: ["guenon", "schuon", "lings", "nasr", "coomaraswamy"],
+    shortSummary:
+      "The 20th-century school founded by Guénon and developed by Schuon, Coomaraswamy, Lings, and Nasr. Its central claim is that the world's authentic religions share a single metaphysical core beneath their irreducibly different forms — and that modern Western thought has lost the thread.",
+    fullBody: `Perennialism — also called the Traditionalist School or *Sophia Perennis* — is the philosophical and metaphysical school founded by René Guénon in the 1920s and developed across the twentieth century by Ananda Coomaraswamy, Frithjof Schuon, Titus Burckhardt, Martin Lings, Huston Smith, Seyyed Hossein Nasr, and others.
+
+The shared claim: there is a single underlying metaphysical doctrine — the *philosophia perennis* — that every authentic spiritual tradition has transmitted under different forms appropriate to its historical and cultural matrix. The doctrines, rituals, and moral codes of Hinduism, Buddhism, Christianity, Islam, Judaism, and Taoism are *really* different at the formal level; what they refer to, the perennialists argue, is the same metaphysical reality.
+
+This is not the flat ecumenism of "all religions teach love." The perennialists insist that access to the metaphysical core requires deep submission to a particular form — there is no path "above" or "between" traditions. Schuon called the alternative ("dilettantism") one of modernity's characteristic failures. Most major perennialists therefore committed fully to one tradition (Guénon, Schuon, Lings, Nasr to Sufism; Coomaraswamy was less explicit; Burckhardt to Sufi Islam) while writing comparatively across many.
+
+The diagnostic side of perennialism — its critique of modernity as a metaphysical deviation that has produced the loss of the sacred and the substitution of quantity for quality — was first developed by Guénon (*The Crisis of the Modern World*, 1927; *The Reign of Quantity*, 1945) and extended by every subsequent perennialist. Whatever one's view of the metaphysics, the diagnosis is recognizable even to readers who reject the framework.
+
+The school has remained marginal in secular academic philosophy and substantial in comparative religion, religious studies, traditional Islamic and Catholic intellectual circles, and certain currents in art history and ecological thought (Coomaraswamy on traditional aesthetics; Nasr on religion and the order of nature).`,
+  },
+  {
+    id: "accelerationism",
+    slug: "accelerationism",
+    name: "Accelerationism",
+    eraStart: 1990,
+    eraEnd: null,
+    region: "european",
+    philosopherIds: ["land", "plant", "fisher", "negarestani"],
+    shortSummary:
+      "Accelerationism began at the CCRU at Warwick in the 1990s — a philosophical reading of capitalism not as a contingent economic system to be reformed but as a self-augmenting cybernetic process. The contemporary debate has split into left-accelerationist and right-accelerationist branches that mostly cannot bear each other's company.",
+    fullBody: `Accelerationism names a philosophical position — and now a cluster of incompatible philosophical positions — that emerged from the Cybernetic Culture Research Unit at the University of Warwick in the 1990s under Nick Land and Sadie Plant, and that has since fragmented into several distinct contemporary currents.
+
+The original Landian formulation treats capitalism not as a contingent economic system that politics could choose to alter but as a self-augmenting cybernetic process that progressively deterritorializes every social form it encounters. The argument draws on Deleuze and Guattari's *Anti-Oedipus*, but pushes the position toward conclusions Deleuze and Guattari would have rejected. The political consequence (in Land's later work) was the abandonment of left-revolutionary politics; subsequent Landian positions ("Dark Enlightenment," neoreaction) have alienated most of his original interlocutors.
+
+The contemporary debate, beginning roughly with Alex Williams and Nick Srnicek's *Accelerationist Manifesto* (2013), produced a *left accelerationism* that takes the diagnostic side of Land seriously — capital really is doing what Land said it is doing — while rejecting the political conclusion. The left-accelerationist proposal is that emancipatory politics requires *accelerating* the technological and organizational capacities capitalism has developed, redirecting them away from capital's specific imperatives toward post-capitalist ends. Nick Srnicek and Alex Williams' *Inventing the Future* (2015) is the major book-length statement.
+
+A separate strand — *unconditional accelerationism* (U/ACC) — argues that both right and left accelerationisms are too political, too tied to specific human projects, to grasp the autonomy of the process they describe. The dispute is partly about what kind of agent is genuinely *in* the situation.
+
+Mark Fisher's *Capitalist Realism* (2009) reads as a sustained left-accelerationist intervention before that vocabulary stabilized; Reza Negarestani's *Cyclonopedia* (2008) and *Intelligence and Spirit* (2018) belong to the same conversation. The school remains philosophically active and increasingly contested.`,
+  },
+  {
+    id: "ccru",
+    slug: "ccru",
+    name: "Cybernetic Culture Research Unit (CCRU)",
+    eraStart: 1995,
+    eraEnd: 2003,
+    region: "european",
+    philosopherIds: ["land", "plant", "fisher", "negarestani"],
+    shortSummary:
+      "The CCRU was an unofficial research collective at Warwick — founded by Sadie Plant in 1995, taken over by Nick Land — that produced, across about a decade, the body of collaborative theory-fiction that the contemporary accelerationist, hauntological, and weird-realist traditions all trace back to.",
+    fullBody: `The Cybernetic Culture Research Unit at the University of Warwick was founded by Sadie Plant in 1995 and quickly became something other than what Warwick had authorized. Land took the lead after Plant left in 1997; the collective operated largely outside official university structures, producing collaboratively-authored texts that crossed philosophy, fiction, cyberpunk, occultism, music criticism, and early internet culture.
+
+The CCRU's output is hard to characterize because the genres are deliberately mixed. *Ccru: Writings 1997–2003* (Urbanomic, 2017) collects the major texts: numogram diagrams, fictional pantheons (the *Numogram Pandemonium*), readings of jungle and drum'n'bass as theory-objects, the texture of pre-millennium internet anxiety, sustained engagement with H.P. Lovecraft and J.G. Ballard as philosophical interlocutors. The methodology — which Land later called *theory-fiction* — treats the boundary between concept and narrative as something philosophy should learn to cross rather than police.
+
+What survived the collective's collapse is the constellation of figures who passed through it: Land and Plant most centrally; Mark Fisher (who did his PhD there, *Flatline Constructs*); Iain Hamilton Grant; Reza Negarestani (later, in conversation); Steve Goodman (the music theorist and dub artist Kode9); Anna Greenspan; Ray Brassier (briefly). The collective produced no canonical doctrine, but the figures it formed have shaped subsequent debates across accelerationism, speculative realism, hauntology, contemporary weird fiction, and electronic music theory.
+
+The CCRU is now read as one of the more consequential British philosophical formations of the late twentieth century — partly because its concept of *hyperstition* (fictions that produce their own reality through propagation) describes the mode of its own subsequent influence.`,
+  },
+  {
     id: "kyoto-school",
     slug: "kyoto-school",
     name: "Kyoto School",

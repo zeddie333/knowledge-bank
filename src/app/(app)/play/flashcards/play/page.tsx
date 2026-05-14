@@ -12,13 +12,21 @@ import { useStore } from "@/lib/store";
 import { generateQuiz, type QuizQuestion } from "@/lib/quiz";
 import { getPhilosopher, PHILOSOPHERS } from "@/data/philosophers";
 import { getConcept } from "@/data/concepts";
-import type { Difficulty } from "@/lib/types";
+import type { Difficulty, Theme, Era, Region } from "@/lib/types";
+
+function parseSet<T extends string>(raw: string | null): Set<T> {
+  if (!raw) return new Set();
+  return new Set(raw.split(",").filter(Boolean) as T[]);
+}
 
 export default function MultipleChoiceQuiz() {
   const search = useSearchParams();
   const router = useRouter();
   const difficulty = (search.get("d") as Difficulty) ?? "beginner";
   const length = Math.max(1, Math.min(50, parseInt(search.get("l") ?? "10", 10))) as 10 | 25 | 50;
+  const themes = parseSet<Theme>(search.get("th"));
+  const eras = parseSet<Era>(search.get("er"));
+  const regions = parseSet<Region>(search.get("rg"));
 
   const progress = useStore((s) => s.progress);
   const recordQuiz = useStore((s) => s.recordQuiz);
@@ -34,7 +42,7 @@ export default function MultipleChoiceQuiz() {
   );
 
   const [questions] = React.useState<QuizQuestion[]>(() =>
-    generateQuiz(difficulty, length, touchedPhilosopherIds),
+    generateQuiz(difficulty, length, touchedPhilosopherIds, { themes, eras, regions }),
   );
 
   const [idx, setIdx] = React.useState(0);

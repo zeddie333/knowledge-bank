@@ -813,6 +813,196 @@ The book transformed philosophy of science and made the word *paradigm* into a b
       { title: "Thomas Kuhn (SEP)", cite: "Bird, A. SEP entry 'Thomas Kuhn'", url: "https://plato.stanford.edu/entries/thomas-kuhn/" },
     ],
   },
+
+  // ---- Perennialist / Traditionalist concepts ----
+  {
+    id: "perennial-philosophy",
+    slug: "perennial-philosophy",
+    name: "Philosophia Perennis",
+    difficulty: "advanced",
+    theme: "metaphysics",
+    philosopherIds: ["guenon", "schuon", "lings", "nasr", "coomaraswamy"],
+    shortSummary:
+      "The Perennialist thesis that every authentic spiritual tradition has transmitted a single underlying metaphysical doctrine under different forms. Not the flat 'all religions teach love' — the doctrine is precise, technical, and (on the Perennialist account) accessible only through legitimate initiatory transmission.",
+    fullBody: `The phrase *philosophia perennis* — perennial philosophy — was used by Agostino Steuco in the sixteenth century and revived in the twentieth by Aldous Huxley (*The Perennial Philosophy*, 1945) and then, more rigorously, by the Traditionalist School around Guénon and Schuon.
+
+The Perennialist version of the doctrine has several distinct features that the popular use of the phrase has tended to elide. First: the perennial doctrine is *metaphysical*, not ethical. The claim is not that all religions teach the same moral lessons (they don't, even on the Perennialists' own account); the claim is that all authentic religions are paths to the same ultimate reality, accessed under different formal vocabularies. Second: access to this reality requires submission to *one* tradition's form, followed in earnest, not a cobbling-together of elements from many. The Perennialist is more committed to particular religious practice than the eclectic spiritual shopper, not less. Third: the doctrine is held to be inaccessible to merely discursive reason — it requires *initiatory transmission* through a living lineage.
+
+The Perennialist case has been extensively criticized. Critics argue that what the Perennialists identify as the underlying common doctrine is itself a specific synthesis (heavily indebted to Advaita Vedānta and Sufism) projected onto traditions it doesn't quite fit; that the criterion of "authentic transmission" is unfalsifiable; that the school's hostility to modernity makes it politically suspect. Defenders argue that the Perennialists are doing serious comparative metaphysics in a register the secular academy has refused to engage on its own terms.
+
+Whatever one's verdict, the Perennialist diagnosis of modernity — the loss of the sacred, the substitution of quantity for quality, the desacralization of knowledge — has been a persistent intellectual presence even outside the school proper, audible in figures from Charles Taylor to certain currents in ecological thought.`,
+    sources: [
+      { title: "René Guénon, The Crisis of the Modern World", cite: "Sophia Perennis 2004 (orig. 1927)" },
+      { title: "Frithjof Schuon, The Transcendent Unity of Religions", cite: "Quest Books 1984 (orig. 1948)" },
+      { title: "Seyyed Hossein Nasr, Knowledge and the Sacred", cite: "SUNY Press 1989" },
+    ],
+  },
+  {
+    id: "transcendent-unity",
+    slug: "transcendent-unity-of-religions",
+    name: "Transcendent Unity of Religions",
+    difficulty: "advanced",
+    theme: "religion",
+    philosopherIds: ["schuon"],
+    shortSummary:
+      "Schuon's central thesis: religions are unified at the metaphysical level while remaining irreducibly different at the level of form, doctrine, and ritual. The position rejects both exclusivism and flat ecumenism — and threads a needle most contemporary religious studies has refused to try threading.",
+    fullBody: `Frithjof Schuon's *The Transcendent Unity of Religions* (1948) gave the Perennialist position its sharpest twentieth-century formulation. The argument turns on a distinction between the *exoteric* and *esoteric* dimensions of any authentic tradition.
+
+The *exoteric* is the outward form: doctrine, ritual, scripture as read at face value, the moral and social practices that define the community. At this level, religions differ — really differ, in ways that cannot be argued away. The doctrine of the Trinity is not the doctrine of *tawḥīd*; the Eucharistic mystery is not Vedic sacrifice; the rules for prayer in Islam are not the rules for meditation in Buddhism. These differences are not surface features that careful ecumenism can dissolve.
+
+The *esoteric* is the inner metaphysical content to which the exoteric form refers and through which it is approached. At this level, on Schuon's account, the world's authentic traditions are unified — they are different formal vocabularies for the same metaphysical reality. The unity is real but does not abolish the formal differences; the formal differences are real but do not contradict the underlying unity.
+
+The position has practical consequences. Schuon held — and the Perennialist tradition has generally followed him — that the path to the esoteric runs *through* a specific exoteric form, not above or between them. You become a serious Sufi, a serious Catholic, a serious Vedāntin; you do not become a "spiritual person" without form. The exoteric form is the channel through which the formless makes itself accessible.`,
+    sources: [
+      { title: "Schuon, The Transcendent Unity of Religions", cite: "Quest Books 1984 (orig. 1948)" },
+    ],
+  },
+  // ---- Accelerationism / CCRU concepts ----
+  {
+    id: "hyperstition",
+    slug: "hyperstition",
+    name: "Hyperstition",
+    difficulty: "advanced",
+    theme: "politics",
+    philosopherIds: ["land", "negarestani"],
+    shortSummary:
+      "A fiction that propagates itself into reality. Coined by the CCRU in the 1990s, hyperstition names the mechanism by which a sufficiently widespread anticipation of a future state contributes to producing that state — capital and AI being the contemporary paradigm cases.",
+    fullBody: `Hyperstition is a CCRU coinage from the 1990s. The concept names a specific mechanism: a fiction whose currency in the social imagination produces the conditions of its own realization. The classical example used in CCRU texts is the dollar — a "fiction" in the sense that its value depends on widespread belief in that value, and that belief is in turn supported and propagated by the institutional infrastructure that the fiction itself organizes. The dollar is real *because* the hyperstition has succeeded.
+
+The concept's reach is broader than economics. Capital itself, in Land's reading, is a hyperstition that has by now mostly written itself into reality. AI as a technology is partly real and partly a hyperstition operating on present capital allocations. Conspiracy theories operate hyperstitionally when they produce the political conditions they claim to merely describe. Branding, religious revival, technological hype cycles, prophetic political programs — all admit of hyperstitional analysis.
+
+The concept is more careful than it looks. Hyperstitions are not merely beliefs that become true; they are fictions whose mode of operation produces real institutional, technical, and political consequences. The line between description and intervention, between forecasting and engineering, runs through hyperstitional analysis as its core question.
+
+Reza Negarestani's *Cyclonopedia* (2008) is the most extended philosophical treatment of hyperstition as method. The concept has since moved well beyond its CCRU origins and is now part of the contemporary vocabulary across philosophy of technology, science and technology studies, and contemporary political theory.`,
+    sources: [
+      { title: "Nick Land, Fanged Noumena", cite: "Urbanomic 2011, esp. essays from 1994–1998" },
+      { title: "Reza Negarestani, Cyclonopedia", cite: "re.press 2008" },
+    ],
+  },
+  {
+    id: "accelerationism-concept",
+    slug: "accelerationism",
+    name: "Accelerationism",
+    difficulty: "advanced",
+    theme: "politics",
+    philosopherIds: ["land", "fisher"],
+    shortSummary:
+      "The position — or family of incompatible positions — that takes capitalism's tendency to deterritorialize all stable social forms not as a problem to be solved but as a process that should be analyzed on its own terms. What follows depends on whether you are a right, left, or unconditional accelerationist.",
+    fullBody: `Accelerationism is the most contested term in contemporary continental philosophy because it names at least three positions that mostly cannot share a room.
+
+*Right accelerationism* (Land, 2010s onward): capital is a cybernetic process that has already escaped human control; emancipatory politics is a category mistake; what remains is to accelerate the process and see what it produces. Land's later political positions (the "Dark Enlightenment," neoreaction) follow from this analysis though most of his interlocutors reject them.
+
+*Left accelerationism* (Williams, Srnicek, Negri-influenced strands): the Landian diagnosis is roughly correct, but the political conclusion is wrong. The technological and organizational capacities capitalism has built can be redirected toward post-capitalist ends — automated luxury communism, universal basic income, the abolition of work. Williams and Srnicek's *Accelerationist Manifesto* (2013) and *Inventing the Future* (2015) are the major statements.
+
+*Unconditional accelerationism* (U/ACC): both political accelerationisms are too tied to specific human projects to think the process they describe. The position is closer to a contemplative posture than to a political program.
+
+What unites the three is the diagnosis: contemporary capitalism is not a contingent economic system in the standard sense, but a self-augmenting process with its own trajectory that the political tradition has not yet learned to think. What divides them is what to do about it.`,
+    sources: [
+      { title: "Robin Mackay & Armen Avanessian (eds.), #Accelerate: The Accelerationist Reader", cite: "Urbanomic/MIT 2014" },
+      { title: "Nick Srnicek & Alex Williams, Inventing the Future", cite: "Verso 2015" },
+    ],
+  },
+  {
+    id: "capitalist-realism",
+    slug: "capitalist-realism",
+    name: "Capitalist Realism",
+    difficulty: "intermediate",
+    theme: "politics",
+    philosopherIds: ["fisher"],
+    shortSummary:
+      "Fisher's name for the cultural condition in which it has become easier to imagine the end of the world than the end of capitalism. Not a doctrine consciously held but a structure of feeling that organizes contemporary cultural production, mental health, and political imagination.",
+    fullBody: `Mark Fisher's *Capitalist Realism: Is There No Alternative?* (2009) names a condition the left had been describing without quite saying for a decade. Adapting a line attributed variously to Jameson and Žižek — "it is easier to imagine the end of the world than the end of capitalism" — Fisher gives the condition a precise diagnostic vocabulary.
+
+Capitalist realism is not a doctrine that anyone consciously holds. It is the *structure of feeling* in which capitalism appears not as a contingent historical formation that could in principle be otherwise but as the natural and inevitable background against which everything else takes place. Even cultural production that explicitly criticizes capitalism — climate fiction, anti-corporate satire, contrarian art — tends to operate within capitalist realism rather than puncture it; the criticism is itself absorbed into the cultural circuits it claims to oppose.
+
+Fisher traces the consequences in three domains. *Mental health*: the rising rates of anxiety and depression are not merely individual neurochemical events but the privatization of stress that the dismantling of social protections has produced. *Education*: the corporatization of universities (where Fisher taught) substitutes audit culture for the goods it claims to measure. *Cultural production*: the slow cancellation of the future — the inability of contemporary culture to produce the genuinely new — is itself an effect of the political horizon's narrowing.
+
+The book has been hugely influential on a generation of writers, organizers, and cultural producers. Its diagnostic vocabulary has become standard well outside its original Marxist-Lacanian register. Fisher's late work — collected in the posthumous *k-punk* — was an attempt to find what real emancipatory politics could look like after capitalist realism had been named.`,
+    sources: [
+      { title: "Mark Fisher, Capitalist Realism: Is There No Alternative?", cite: "Zero Books 2009" },
+    ],
+  },
+  {
+    id: "correlationism",
+    slug: "correlationism",
+    name: "Correlationism",
+    difficulty: "advanced",
+    theme: "metaphysics",
+    philosopherIds: ["meillassoux"],
+    shortSummary:
+      "Meillassoux's term for the move that has dominated post-Kantian philosophy: the assumption that we can only think the relation between thought and being, never being independent of thought. Speculative realism is the attempt to philosophize otherwise.",
+    fullBody: `Quentin Meillassoux introduced *correlationism* in *After Finitude* (2006) as the structural target of the speculative realist project. The term names what Meillassoux takes to be the dominant assumption of post-Kantian philosophy: that we can only think the *correlation* between thought and being, never being independent of thought.
+
+Kant's distinction between phenomena (what appears to us) and noumena (the thing-in-itself, unknowable as such), Husserl's intentional correlation between consciousness and its object, Heidegger's being-in-the-world, Derrida's différance — all are versions, on Meillassoux's reading, of the same basic move. Each insists that the question "what is being, apart from how we encounter it?" is somehow malformed.
+
+Meillassoux's argument that correlationism is incoherent turns on the *arche-fossil* — empirical evidence (radioactive decay rates, the fossil record) of a world that demonstrably preceded any conscious being capable of being correlated with it. The correlationist cannot affirm such evidence as evidence about a real prior world; she can only affirm it as a feature of the current correlation. Meillassoux takes this to be a reductio.
+
+The positive proposal — that what we can know speculatively is the absolute contingency of all things — is Meillassoux's *principle of factiality*. Whether the proposal escapes the post-Kantian critique it claims to escape, or merely reformulates pre-critical metaphysics in a slightly more sophisticated register, is the question subsequent speculative realism has been working through.`,
+    sources: [
+      { title: "Quentin Meillassoux, After Finitude", cite: "trans. Ray Brassier, Continuum 2008" },
+    ],
+  },
+  {
+    id: "necropolitics",
+    slug: "necropolitics",
+    name: "Necropolitics",
+    difficulty: "advanced",
+    theme: "politics",
+    philosopherIds: ["mbembe"],
+    shortSummary:
+      "Mbembe's extension of Foucault's biopolitics. Where biopolitics governs life — making populations live — necropolitics governs death: who is permitted to live and who is sentenced, slowly or quickly, to die. Slavery, colonial occupation, contemporary border regimes are the institutional forms.",
+    fullBody: `Achille Mbembe introduced *necropolitics* in a 2003 essay in *Public Culture* and expanded the argument in *Necropolitique* (2016). The concept builds on and extends Foucault's analysis of biopolitics.
+
+Foucault had argued that modern power, from roughly the eighteenth century, increasingly took as its object the *life* of populations — birth rates, mortality, public health, sexuality — rather than the spectacle of sovereign punishment of individual bodies. The state asserts the right to *make* live and let die, rather than the older right to take life or let live.
+
+Mbembe argues that what colonial and postcolonial modernity have actually produced, alongside biopolitics, is a parallel *necropolitical* regime — the politics of who is permitted to live and who is sentenced to a slow or fast death, who counts as a grievable life and whose death barely registers. Slavery, the plantation, colonial occupation, the camp, contemporary border regimes, the militarized policing of racialized populations: these are the institutional forms of necropolitics. They are not exceptional cases that the standard biopolitical analysis can accommodate as deviations; they are constitutive structures that the standard analysis has not adequately theorized because European political theory has tended to take the European case as the universal one.
+
+The argument has had substantial influence well beyond African and postcolonial studies — in contemporary work on race, migration, prison abolition, and the politics of the Anthropocene. Mbembe's *Necropolitics* (English 2019) is the major book-length development.`,
+    sources: [
+      { title: "Achille Mbembe, Necropolitics", cite: "Duke UP 2019 (orig. 2016)" },
+    ],
+  },
+  {
+    id: "plasticity",
+    slug: "plasticity",
+    name: "Plasticity",
+    difficulty: "advanced",
+    theme: "mind",
+    philosopherIds: ["malabou"],
+    shortSummary:
+      "Malabou's term, taken from Hegel and extended through neuroscience. Plasticity is the simultaneous capacity to give form and to receive form — a structure she finds in the dialectic, in the brain, and in the human person.",
+    fullBody: `Catherine Malabou developed *plasticity* as a philosophical concept across two stages. The first, in *The Future of Hegel: Plasticity, Temporality, and Dialectic* (1996), traced the term through Hegel — for whom *Plastizität* names a specific mode of self-formation: the dialectical subject is plastic insofar as it can give form to itself while being formed by what it encounters.
+
+The second stage extends the concept into contemporary neuroscience. *What Should We Do with Our Brain?* (2004) argues that neuroscience's central discovery — that the brain remains plastic throughout life, capable of being reshaped by experience — is also a philosophical discovery. The plastic brain is *neither* the rigid neural substrate of older neuroscience *nor* the indefinitely flexible self of contemporary capitalism's gig-economy ideology. It is a form that gives shape while being shaped, that creates while being created.
+
+The political payoff: contemporary capitalism prizes a particular conception of flexibility — the worker who can endlessly reskill, the consumer who can be infinitely segmented and addressed. Malabou's plasticity is structurally different. It is *form-giving*, not form-dissolving; it produces shape, even as it accepts the shape of what it encounters. Emancipatory politics, on her account, requires recovering the distinction.
+
+*The New Wounded* (2007) extends plasticity into the analysis of trauma — particularly the "destructive plasticity" of severe brain injury, in which the subject becomes, in some sense, a different person with no path back. Contemporary philosophy of mind has not yet, Malabou argues, found adequate concepts for this kind of transformation.`,
+    sources: [
+      { title: "Catherine Malabou, What Should We Do with Our Brain?", cite: "Fordham UP 2008 (orig. 2004)" },
+      { title: "Malabou, The Future of Hegel", cite: "Routledge 2005 (orig. 1996)" },
+    ],
+  },
+  {
+    id: "the-event",
+    slug: "the-event",
+    name: "The Event (Badiou)",
+    difficulty: "advanced",
+    theme: "metaphysics",
+    philosopherIds: ["badiou"],
+    shortSummary:
+      "In Badiou's metaphysics, events are ruptures in the existing situation — moments that cannot be accounted for in the terms of the situation they interrupt. Truths are produced by patient fidelity to such events. The French Revolution, the discovery of the irrationals, falling in love.",
+    fullBody: `Alain Badiou's *Being and Event* (1988) makes events the central category of his metaphysics. The set-theoretic ontology gives us the structure of situations; events are what the structure cannot describe in its own terms — what happens when something occurs that the situation has no resources to account for.
+
+Examples Badiou returns to: the French Revolution (which the *ancien régime* had no terms for), the Greek discovery of the irrationals (which Pythagorean number theory could not accommodate), the resurrection of Christ as event for Pauline subjectivity (Badiou is an atheist; he reads the event as a paradigm of *fidelity* rather than as a historical claim), genuinely new love (which the lover's prior life could not have anticipated).
+
+What follows from an event is not its immediate consequence but the long work of *fidelity* — the patient construction, over years or centuries, of what the event has made newly thinkable. Truth, on Badiou's account, is what fidelity produces. The French Revolution's truth is the still-unfinished project of organizing political life around the equality of speakers; modern mathematics' truth is the still-unfinished project of working through what set theory permits us to think; love's truth is the construction of a life with someone the lover did not, before, have the resources to recognize as the person she would love.
+
+Badiou distinguishes four "truth procedures": politics, science, art, and love. Events occur in each. Subjects are constituted by their fidelity to such events. Philosophy's role is not to produce truths itself — that is the work of the four procedures — but to think the conditions under which truths can be recognized as such.`,
+    sources: [
+      { title: "Alain Badiou, Being and Event", cite: "trans. Oliver Feltham, Continuum 2005 (orig. 1988)" },
+    ],
+  },
 ];
 
 export function getConcept(slug: string): Concept | undefined {

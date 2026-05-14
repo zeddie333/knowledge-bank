@@ -62,8 +62,9 @@ interface StoreState {
   achievements: Achievement[];
 
   // ---------- Actions ----------
-  signIn: (email: string, username?: string) => void;
+  signIn: (email: string, username?: string, stayLoggedIn?: boolean) => void;
   signOut: () => void;
+  stayLoggedIn: boolean;
   completeOnboarding: (r: OnboardingResult) => void;
 
   markFinished: (contentType: string, contentId: string) => void;
@@ -110,6 +111,7 @@ export const useStore = create<StoreState>()(
       authed: false,
       username: null,
       email: null,
+      stayLoggedIn: true,
 
       xp: 0,
       streakDays: 0,
@@ -127,14 +129,26 @@ export const useStore = create<StoreState>()(
       journal: [],
       achievements: [],
 
-      signIn: (email, username) => {
+      signIn: (email, username, stayLoggedIn = true) => {
+        // Simple login. With the placement quiz removed, we set sensible
+        // defaults so the rest of the app has something to work with.
         set({
           authed: true,
           email,
-          username: username ?? email.split("@")[0],
+          username: (username && username.trim()) || email.split("@")[0],
+          stayLoggedIn,
+          onboardingComplete: true, // skip the legacy onboarding flow
+          difficultyPreference: "beginner",
+          themesOfInterest: ["ethics", "metaphysics"],
+          pace: "10",
         });
       },
-      signOut: () => set({ authed: false, email: null, username: null }),
+      signOut: () =>
+        set({
+          authed: false,
+          email: null,
+          username: null,
+        }),
 
       completeOnboarding: (r) => {
         set({
@@ -371,6 +385,7 @@ export const useStore = create<StoreState>()(
         authed: s.authed,
         username: s.username,
         email: s.email,
+        stayLoggedIn: s.stayLoggedIn,
         xp: s.xp,
         streakDays: s.streakDays,
         lastActiveISODate: s.lastActiveISODate,

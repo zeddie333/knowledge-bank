@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 import { AuthGate } from "@/components/auth-gate";
 import { Nav, MobileNav } from "@/components/nav";
 import { BackButton } from "@/components/back-button";
+import { PageTransition } from "@/components/page-transition";
 
 export default function AppLayout({ children }: { children: ReactNode }) {
   return (
@@ -16,7 +17,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
             <div className="mb-4 -ml-2">
               <BackButton />
             </div>
-            {children}
+            <PageTransition>{children}</PageTransition>
           </div>
         </main>
         <MobileNav />

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Check, X } from "lucide-react";
+import { Check, X, Filter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,12 +11,19 @@ import { Portrait } from "@/components/portrait";
 import { QUOTES } from "@/data/quotes";
 import { PHILOSOPHERS, getPhilosopher } from "@/data/philosophers";
 import { useStore } from "@/lib/store";
+import { useFilterSet, FilterRow } from "@/components/game-filters";
+import type { Theme, Era, Region } from "@/lib/types";
+
+const THEMES: Theme[] = ["metaphysics", "ethics", "epistemology", "mind", "politics", "aesthetics", "religion", "logic"];
+const ERAS: Era[] = ["ancient", "medieval", "early-modern", "modern", "contemporary"];
+const REGIONS: Region[] = ["greek", "roman", "east-asian", "south-asian", "islamic", "european", "african", "american"];
+const LENGTHS = [5, 10, 20] as const;
 
 interface IdRound {
   passage: string;
   source: string;
   correctId: string;
-  choices: string[]; // philosopher ids
+  choices: string[];
 }
 
 function shuffle<T>(a: T[]): T[] {
@@ -28,13 +35,36 @@ function shuffle<T>(a: T[]): T[] {
   return b;
 }
 
-function buildRounds(n = 10): IdRound[] {
-  const usable = QUOTES.filter((q) => q.text.length > 30); // exclude over-short fragments
-  return shuffle(usable)
+function philosophersMatching(
+  themes: Set<Theme>,
+  eras: Set<Era>,
+  regions: Set<Region>,
+) {
+  return PHILOSOPHERS.filter((p) => {
+    if (themes.size > 0 && !p.themes.some((t) => themes.has(t))) return false;
+    if (eras.size > 0 && !eras.has(p.era)) return false;
+    if (regions.size > 0 && !regions.has(p.region)) return false;
+    return true;
+  });
+}
+
+function buildRounds(
+  themes: Set<Theme>,
+  eras: Set<Era>,
+  regions: Set<Region>,
+  n: number,
+): IdRound[] {
+  const eligible = philosophersMatching(themes, eras, regions);
+  const eligibleIds = new Set(eligible.map((p) => p.id));
+  const usableQuotes = QUOTES.filter(
+    (q) => q.text.length > 30 && eligibleIds.has(q.philosopherId),
+  );
+  const distractorPool = eligible.length >= 4 ? eligible : PHILOSOPHERS;
+  return shuffle(usableQuotes)
     .slice(0, n)
     .map((q) => {
       const wrong = shuffle(
-        PHILOSOPHERS.filter((p) => p.id !== q.philosopherId).map((p) => p.id),
+        distractorPool.filter((p) => p.id !== q.philosopherId).map((p) => p.id),
       ).slice(0, 3);
       return {
         passage: q.text,
@@ -46,7 +76,85 @@ function buildRounds(n = 10): IdRound[] {
 }
 
 export default function IdentificationGame() {
-  const [rounds] = React.useState<IdRound[]>(() => buildRounds(10));
+  const [phase, setPhase] = React.useState<"setup" | "playing">("setup");
+  const themes = useFilterSet<Theme>();
+  const eras = useFilterSet<Era>();
+  const regions = useFilterSet<Region>();
+  const [length, setLength] = React.useState<(typeof LENGTHS)[number]>(10);
+  const [rounds, setRounds] = React.useState<IdRound[]>([]);
+
+  const previewCount = React.useMemo(
+    () =>
+      QUOTES.filter(
+        (q) =>
+          q.text.length > 30 &&
+          philosophersMatching(themes.selected, eras.selected, regions.selected).some(
+            (p) => p.id === q.philosopherId,
+          ),
+      ).length,
+    [themes.selected, eras.selected, regions.selected],
+  );
+
+  if (phase === "setup") {
+    return (
+      <div className="space-y-8">
+        <header>
+          <p className="font-sans text-xs uppercase tracking-widest text-muted-foreground">Let's Play · Identification</p>
+          <h1 className="mt-1 font-serif text-3xl tracking-tight">Read the passage. Name the philosopher.</h1>
+          <p className="mt-2 max-w-prose text-foreground/80">
+            Customize what kinds of passages get drawn. Match every filter or leave them all open.
+          </p>
+        </header>
+
+        <Card className="space-y-4 p-5">
+          <FilterRow label="Theme" options={THEMES} filter={themes} />
+          <FilterRow label="Era" options={ERAS} filter={eras} />
+          <FilterRow label="Region" options={REGIONS} filter={regions} />
+          <div className="flex flex-wrap items-center gap-2 pt-2">
+            <span className="w-20 shrink-0 font-sans text-xs uppercase tracking-widest text-muted-foreground">
+              Length
+            </span>
+            <div className="flex gap-1.5">
+              {LENGTHS.map((l) => (
+                <button key={l} type="button" onClick={() => setLength(l)}>
+                  <Badge
+                    variant={length === l ? "accent" : "outline"}
+                    className="qz-chip cursor-pointer"
+                  >
+                    {l} rounds
+                  </Badge>
+                </button>
+              ))}
+            </div>
+          </div>
+        </Card>
+
+        <div className="flex items-center justify-between">
+          <p className="font-sans text-sm text-muted-foreground">
+            <Filter className="-mt-0.5 mr-1 inline h-3.5 w-3.5" />
+            {previewCount} passages match these filters.
+          </p>
+          <Button
+            variant="accent"
+            disabled={previewCount === 0}
+            onClick={() => {
+              setRounds(
+                buildRounds(themes.selected, eras.selected, regions.selected, length),
+              );
+              setPhase("playing");
+            }}
+          >
+            Begin
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  return <PlayingRounds rounds={rounds} />;
+}
+
+function PlayingRounds({ rounds }: { rounds: IdRound[] }) {
   const [idx, setIdx] = React.useState(0);
   const [pickedId, setPickedId] = React.useState<string | null>(null);
   const [revealed, setRevealed] = React.useState(false);

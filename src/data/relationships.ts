@@ -219,6 +219,55 @@ export const RELATIONSHIPS: Relationship[] = [
   { id: "c-searle-int", fromType: "philosopher", fromId: "searle", toType: "concept", toId: "intentionality", relation: "related_to" },
   { id: "c-carnap-verif", fromType: "philosopher", fromId: "carnap", toType: "concept", toId: "verification", relation: "exemplifies" },
   { id: "c-kuhn-paradigm", fromType: "philosopher", fromId: "kuhn", toType: "concept", toId: "paradigm-shift", relation: "exemplifies" },
+
+  // ---- Perennialists ----
+  { id: "r-guenon-perennial", fromType: "philosopher", fromId: "guenon", toType: "school", toId: "perennialism", relation: "belongs_to" },
+  { id: "r-schuon-perennial", fromType: "philosopher", fromId: "schuon", toType: "school", toId: "perennialism", relation: "belongs_to" },
+  { id: "r-lings-perennial", fromType: "philosopher", fromId: "lings", toType: "school", toId: "perennialism", relation: "belongs_to" },
+  { id: "r-nasr-perennial", fromType: "philosopher", fromId: "nasr", toType: "school", toId: "perennialism", relation: "belongs_to" },
+  { id: "r-coomaraswamy-perennial", fromType: "philosopher", fromId: "coomaraswamy", toType: "school", toId: "perennialism", relation: "belongs_to" },
+  { id: "r-guenon-schuon", fromType: "philosopher", fromId: "guenon", toType: "philosopher", toId: "schuon", relation: "influenced" },
+  { id: "r-schuon-lings", fromType: "philosopher", fromId: "schuon", toType: "philosopher", toId: "lings", relation: "influenced" },
+  { id: "r-schuon-nasr", fromType: "philosopher", fromId: "schuon", toType: "philosopher", toId: "nasr", relation: "influenced" },
+  { id: "r-guenon-coomaraswamy", fromType: "philosopher", fromId: "guenon", toType: "philosopher", toId: "coomaraswamy", relation: "related_to" },
+  { id: "r-nasr-sufism", fromType: "philosopher", fromId: "nasr", toType: "school", toId: "sufism", relation: "related_to" },
+  { id: "r-lings-sufism", fromType: "philosopher", fromId: "lings", toType: "school", toId: "sufism", relation: "related_to" },
+  { id: "c-guenon-perennial", fromType: "philosopher", fromId: "guenon", toType: "concept", toId: "perennial-philosophy", relation: "exemplifies" },
+  { id: "c-schuon-tu", fromType: "philosopher", fromId: "schuon", toType: "concept", toId: "transcendent-unity", relation: "exemplifies" },
+
+  // ---- CCRU / accelerationism ----
+  { id: "r-land-ccru", fromType: "philosopher", fromId: "land", toType: "school", toId: "ccru", relation: "belongs_to" },
+  { id: "r-plant-ccru", fromType: "philosopher", fromId: "plant", toType: "school", toId: "ccru", relation: "belongs_to" },
+  { id: "r-fisher-ccru", fromType: "philosopher", fromId: "fisher", toType: "school", toId: "ccru", relation: "belongs_to" },
+  { id: "r-negarestani-ccru", fromType: "philosopher", fromId: "negarestani", toType: "school", toId: "ccru", relation: "related_to" },
+  { id: "r-land-accel", fromType: "philosopher", fromId: "land", toType: "school", toId: "accelerationism", relation: "belongs_to" },
+  { id: "r-fisher-accel", fromType: "philosopher", fromId: "fisher", toType: "school", toId: "accelerationism", relation: "belongs_to" },
+  { id: "r-land-fisher", fromType: "philosopher", fromId: "land", toType: "philosopher", toId: "fisher", relation: "influenced" },
+  { id: "r-deleuze-land", fromType: "philosopher", fromId: "deleuze", toType: "philosopher", toId: "land", relation: "influenced" },
+  { id: "c-land-hyper", fromType: "philosopher", fromId: "land", toType: "concept", toId: "hyperstition", relation: "exemplifies" },
+  { id: "c-fisher-cr", fromType: "philosopher", fromId: "fisher", toType: "concept", toId: "capitalist-realism", relation: "exemplifies" },
+  { id: "c-land-accel-concept", fromType: "philosopher", fromId: "land", toType: "concept", toId: "accelerationism-concept", relation: "exemplifies" },
+
+  // ---- Speculative realism / Meillassoux ----
+  { id: "r-badiou-meillassoux", fromType: "philosopher", fromId: "badiou", toType: "philosopher", toId: "meillassoux", relation: "influenced" },
+  { id: "r-meillassoux-sr", fromType: "philosopher", fromId: "meillassoux", toType: "school", toId: "speculative-realism", relation: "belongs_to" },
+  { id: "r-harman-sr", fromType: "philosopher", fromId: "harman", toType: "school", toId: "speculative-realism", relation: "belongs_to" },
+  { id: "r-brassier-sr", fromType: "philosopher", fromId: "brassier", toType: "school", toId: "speculative-realism", relation: "belongs_to" },
+  { id: "r-heidegger-harman", fromType: "philosopher", fromId: "heidegger", toType: "philosopher", toId: "harman", relation: "influenced" },
+  { id: "c-meillassoux-corr", fromType: "philosopher", fromId: "meillassoux", toType: "concept", toId: "correlationism", relation: "exemplifies" },
+
+  // ---- Living contemporary ----
+  { id: "r-foucault-mbembe", fromType: "philosopher", fromId: "foucault", toType: "philosopher", toId: "mbembe", relation: "influenced" },
+  { id: "r-fanon-mbembe", fromType: "philosopher", fromId: "fanon", toType: "philosopher", toId: "mbembe", relation: "influenced" },
+  { id: "r-mbembe-postcolonial", fromType: "philosopher", fromId: "mbembe", toType: "school", toId: "postcolonial-theory", relation: "belongs_to" },
+  { id: "r-mbembe-africana", fromType: "philosopher", fromId: "mbembe", toType: "school", toId: "africana-philosophy", relation: "belongs_to" },
+  { id: "c-mbembe-necro", fromType: "philosopher", fromId: "mbembe", toType: "concept", toId: "necropolitics", relation: "exemplifies" },
+  { id: "r-derrida-malabou", fromType: "philosopher", fromId: "derrida", toType: "philosopher", toId: "malabou", relation: "influenced" },
+  { id: "r-hegel-malabou", fromType: "philosopher", fromId: "hegel", toType: "philosopher", toId: "malabou", relation: "influenced" },
+  { id: "c-malabou-plasticity", fromType: "philosopher", fromId: "malabou", toType: "concept", toId: "plasticity", relation: "exemplifies" },
+  { id: "r-hegel-zizek", fromType: "philosopher", fromId: "hegel", toType: "philosopher", toId: "zizek", relation: "influenced" },
+  { id: "r-lacan-zizek", fromType: "philosopher", fromId: "lacan", toType: "philosopher", toId: "zizek", relation: "influenced" },
+  { id: "c-badiou-event", fromType: "philosopher", fromId: "badiou", toType: "concept", toId: "the-event", relation: "exemplifies" },
 ];
 
 export function relatedTo(type: string, id: string): Relationship[] {

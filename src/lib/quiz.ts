@@ -4,7 +4,13 @@
 import { PHILOSOPHERS } from "@/data/philosophers";
 import { CONCEPTS } from "@/data/concepts";
 import { QUOTES } from "@/data/quotes";
-import type { Difficulty } from "./types";
+import type { Difficulty, Theme, Era, Region } from "./types";
+
+export interface QuizFilters {
+  themes?: Set<Theme>;
+  eras?: Set<Era>;
+  regions?: Set<Region>;
+}
 
 export interface QuizQuestion {
   id: string;
@@ -33,28 +39,52 @@ function distractors<T>(pool: T[], correct: T, n: number, eq: (a: T, b: T) => bo
   return shuffled(pool.filter((p) => !eq(p, correct))).slice(0, n);
 }
 
+function philosopherMatchesFilters(
+  p: (typeof PHILOSOPHERS)[number],
+  f: QuizFilters | undefined,
+): boolean {
+  if (!f) return true;
+  if (f.themes && f.themes.size > 0 && !p.themes.some((t) => f.themes!.has(t))) return false;
+  if (f.eras && f.eras.size > 0 && !f.eras.has(p.era)) return false;
+  if (f.regions && f.regions.size > 0 && !f.regions.has(p.region)) return false;
+  return true;
+}
+
 export function generateQuiz(
   difficulty: Difficulty,
   length: 10 | 25 | 50,
   touchedPhilosopherIds: string[],
+  filters?: QuizFilters,
 ): QuizQuestion[] {
-  const knownPhilosophers = PHILOSOPHERS.filter((p) => touchedPhilosopherIds.includes(p.id));
-  const seedPhilosophers = knownPhilosophers.length >= 3 ? knownPhilosophers : PHILOSOPHERS;
+  const philosopherPoolBase = PHILOSOPHERS.filter((p) => philosopherMatchesFilters(p, filters));
+  const knownPhilosophers = philosopherPoolBase.filter((p) => touchedPhilosopherIds.includes(p.id));
+  const seedPhilosophers = knownPhilosophers.length >= 3 ? knownPhilosophers : philosopherPoolBase;
+  const quotesPool = QUOTES.filter((q) =>
+    philosopherPoolBase.some((p) => p.id === q.philosopherId),
+  );
+  const conceptsPool = CONCEPTS.filter((c) => {
+    if (!filters?.themes || filters.themes.size === 0) return true;
+    return filters.themes.has(c.theme);
+  });
 
   // ~80% from touched content, ~20% from new — per brief.
   const newRatio = 0.2;
   const questions: QuizQuestion[] = [];
 
+  if (philosopherPoolBase.length < 4 || quotesPool.length === 0) {
+    return [];
+  }
+
   for (let i = 0; i < length; i++) {
     const useNew = Math.random() < newRatio;
+    const philosopherPool = useNew ? philosopherPoolBase : seedPhilosophers;
     const kind = i % 3; // rotate question shapes
-    const philosopherPool = useNew ? PHILOSOPHERS : seedPhilosophers;
 
     if (kind === 0) {
       // Quote → author
-      const q = pick(QUOTES);
+      const q = pick(quotesPool);
       const correct = PHILOSOPHERS.find((p) => p.id === q.philosopherId)!;
-      const wrongs = distractors(PHILOSOPHERS, correct, 3, (a, b) => a.id === b.id);
+      const wrongs = distractors(philosopherPoolBase, correct, 3, (a, b) => a.id === b.id);
       const choices = shuffled([correct, ...wrongs]).map((p) => ({ id: p.id, label: p.name }));
       questions.push({
         id: `q-${i}`,
@@ -67,7 +97,7 @@ export function generateQuiz(
     } else if (kind === 1) {
       // Philosopher → summary
       const correct = pick(philosopherPool);
-      const wrongs = distractors(PHILOSOPHERS, correct, 3, (a, b) => a.id === b.id);
+      const wrongs = distractors(philosopherPoolBase, correct, 3, (a, b) => a.id === b.id);
       const choices = shuffled([
         { id: correct.id, label: correct.shortSummary.split(".")[0] + "." },
         ...wrongs.map((w) => ({ id: w.id, label: w.shortSummary.split(".")[0] + "." })),
@@ -82,9 +112,11 @@ export function generateQuiz(
       });
     } else {
       // Concept → philosopher
-      const correctConcept = pick(CONCEPTS);
-      const correctPhi = PHILOSOPHERS.find((p) => correctConcept.philosopherIds.includes(p.id)) ?? pick(PHILOSOPHERS);
-      const wrongs = distractors(PHILOSOPHERS, correctPhi, 3, (a, b) => a.id === b.id);
+      const correctConcept = conceptsPool.length > 0 ? pick(conceptsPool) : pick(CONCEPTS);
+      const correctPhi =
+        PHILOSOPHERS.find((p) => correctConcept.philosopherIds.includes(p.id)) ??
+        pick(philosopherPoolBase);
+      const wrongs = distractors(philosopherPoolBase, correctPhi, 3, (a, b) => a.id === b.id);
       const choices = shuffled([correctPhi, ...wrongs]).map((p) => ({ id: p.id, label: p.name }));
       questions.push({
         id: `q-${i}`,

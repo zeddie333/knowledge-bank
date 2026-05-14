@@ -50,6 +50,10 @@ export const SCHOOL_IMAGES: Record<string, string> = {
   "africana-philosophy": wikiImage("W.E.B._Du_Bois_by_James_E._Purdy,_1907.jpg"),
   "speculative-realism": wikiImage("Quentin_Meillassoux_au_marathon_du_savoir_du_Festival_d'Avignon_2016.jpg"),
   "kyoto-school": wikiImage("Kitaro_Nishida.jpg"),
+  // Added in current expansion
+  "perennialism": wikiImage("Rene_Guenon_1925.jpg"),
+  "accelerationism": wikiImage("Cybernetic_loop.svg"),
+  "ccru": wikiImage("Warwick_University_Library_2018.jpg"),
 };
 
 export const CONCEPT_IMAGES: Record<string, string> = {
@@ -91,6 +95,16 @@ export const CONCEPT_IMAGES: Record<string, string> = {
   "intentionality": wikiImage("Edmund_Husserl_1900.jpg"),
   "verification-principle": wikiImage("Vienna_Circle.png"),
   "paradigm-shift": wikiImage("Kuhn.jpg"),
+  // Added in current expansion
+  "perennial-philosophy": wikiImage("Rene_Guenon_1925.jpg"),
+  "transcendent-unity-of-religions": wikiImage("Frithjof_Schuon.jpg"),
+  "hyperstition": wikiImage("Numogram.svg"),
+  "accelerationism": wikiImage("Cybernetic_loop.svg"),
+  "capitalist-realism": wikiImage("Edvard_Munch_-_The_Scream_-_Google_Art_Project.jpg"),
+  "correlationism": wikiImage("Quentin_Meillassoux_au_marathon_du_savoir_du_Festival_d'Avignon_2016.jpg"),
+  "necropolitics": wikiImage("Achille_Mbembe_par_Claude_Truong-Ngoc_novembre_2015.jpg"),
+  "plasticity": wikiImage("Synapse_diag1.svg"),
+  "the-event": wikiImage("Alain_Badiou_in_2007.jpg"),
 };
 
 export const TE_IMAGES: Record<string, string> = {
