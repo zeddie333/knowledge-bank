@@ -20,7 +20,9 @@ export type Theme =
   | "politics"
   | "aesthetics"
   | "religion"
-  | "logic";
+  | "logic"
+  | "science"
+  | "language";
 
 export type Era =
   | "ancient"

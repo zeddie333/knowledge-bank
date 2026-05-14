@@ -1003,6 +1003,200 @@ Badiou distinguishes four "truth procedures": politics, science, art, and love. 
       { title: "Alain Badiou, Being and Event", cite: "trans. Oliver Feltham, Continuum 2005 (orig. 1988)" },
     ],
   },
+
+  // ---- Core categories added in current expansion ----
+  {
+    id: "ontology",
+    slug: "ontology",
+    name: "Ontology",
+    difficulty: "intermediate",
+    theme: "metaphysics",
+    philosopherIds: ["aristotle", "heidegger", "quine"],
+    shortSummary:
+      "The branch of metaphysics that asks what exists, in the most general possible sense. The question 'what is there?' — Quine's one-word answer was 'Everything' — turns out to be much harder than it sounds.",
+    fullBody: `Ontology is the philosophical study of being qua being — what kinds of things exist, what it is for them to exist, what their general categories are.
+
+The ancient version is Aristotle's *Metaphysics*, particularly Book IV: "There is a science that studies being qua being, and the attributes that belong to it of itself." Aristotle's substance/accident distinction, his theory of categories (substance, quality, quantity, relation, place, time, position, state, action, passion), and his account of the four causes all belong to ontology in its founding form.
+
+The modern revival of ontology in twentieth-century analytic philosophy is partly Quine's. His "On What There Is" (1948) made the field rigorous by tying ontological commitments to the existential quantifiers of first-order logic. To exist is to be the value of a bound variable; debates about whether numbers, properties, fictional characters, or possible worlds exist become debates about whether our best theories must quantify over them.
+
+The continental version, particularly Heidegger's, is broader. Heidegger asks not just what exists but what *being* means — what it is for anything to be at all. *Being and Time* is the major attempt to recover this question after centuries of philosophy's drifting toward beings (things, properties, events) and away from being itself.
+
+Contemporary ontology spans both traditions and includes mereology, formal ontology in information science, ontology of art, social ontology (institutional facts), and the metametaphysics that asks whether ontological disputes are substantive or merely verbal.`,
+    sources: [
+      { title: "Aristotle, Metaphysics", cite: "Book IV" },
+      { title: "Quine, On What There Is (1948)", cite: "in From a Logical Point of View" },
+    ],
+  },
+  {
+    id: "nihilism",
+    slug: "nihilism",
+    name: "Nihilism",
+    difficulty: "intermediate",
+    theme: "metaphysics",
+    philosopherIds: ["nietzsche", "brassier"],
+    shortSummary:
+      "The view that there is no inherent meaning, value, or purpose in existence. Often misunderstood. Nietzsche treated nihilism as the major intellectual problem of the modern world — not a position to adopt but a danger to be worked through.",
+    fullBody: `Nihilism — from the Latin *nihil*, nothing — names the position that there are no inherent values, no inherent meanings, no inherent purposes in reality. The concept has several distinct registers worth keeping separate.
+
+*Moral nihilism* is the view that there are no objective moral facts. Nothing is really good or evil; the moral vocabulary describes nothing in the world.
+
+*Existential nihilism* is the view that human existence has no inherent meaning or purpose. Some people draw consoling conclusions ("we are therefore free to invent meaning"); others find it crushing. Camus' question — given existential nihilism, why not suicide? — is the start of his *Myth of Sisyphus*.
+
+*Metaphysical or ontological nihilism* is the more extreme view that nothing exists at all — or that the categories by which we ordinarily divide reality have no purchase. Nāgārjuna is *not* a nihilist in this sense, despite occasional misreadings; he is at pains to distinguish *śūnyatā* from this view.
+
+Nietzsche is the philosopher most associated with nihilism, but he treated it as the problem rather than the position. The death of God produces what Nietzsche called the *advent of nihilism* — a cultural condition in which the values that organized European life have lost their grounding, and what will replace them is genuinely uncertain. His work is the attempt to think through what comes after, not to recommend nihilism.
+
+Contemporary nihilism has a renewed academic register through Ray Brassier's *Nihil Unbound* (2007), which argues for a "transcendental nihilism" that takes seriously the eventual extinction of consciousness — local and cosmic — as a *speculative* fact philosophy must think rather than evade.`,
+    sources: [
+      { title: "Nietzsche, The Will to Power", cite: "§§1–28 on nihilism as the central modern problem" },
+      { title: "Ray Brassier, Nihil Unbound", cite: "Palgrave Macmillan 2007" },
+    ],
+  },
+  {
+    id: "hermeneutics",
+    slug: "hermeneutics",
+    name: "Hermeneutics",
+    difficulty: "advanced",
+    theme: "language",
+    philosopherIds: ["heidegger", "taylor"],
+    shortSummary:
+      "The philosophical study of interpretation. Originally about how to read scripture; now a general theory of how understanding any text, situation, or tradition is possible — and why it is always partial.",
+    fullBody: `Hermeneutics began as a discipline of biblical interpretation in early modern Europe and was generalized by Schleiermacher in the early nineteenth century into a theory of textual interpretation as such. Wilhelm Dilthey extended it further: hermeneutics is what distinguishes the *Geisteswissenschaften* (human sciences) from the natural sciences. We *understand* texts, persons, and historical periods through interpretation; we *explain* natural phenomena through causal laws.
+
+The major twentieth-century turn was Heidegger's. In *Being and Time*, hermeneutics is not a method but a fundamental feature of being human. We are always already interpreting our situation, projecting meaning onto what we encounter, embedded in a pre-reflective understanding (the *hermeneutic circle*: we can only understand the parts in terms of the whole and the whole in terms of the parts).
+
+Hans-Georg Gadamer's *Truth and Method* (1960) is the major systematic development. The encounter with any text, on Gadamer's account, is a *fusion of horizons* — the interpreter's horizon (assumptions, prejudices, historical position) meets the horizon of the text. Understanding is not the elimination of one's prejudices but their productive engagement with the text's. Interpretation has no view from nowhere.
+
+Paul Ricoeur extended hermeneutics into philosophy of action, narrative, and the self. Charles Taylor's work on modern identity is recognizably hermeneutic. The contemporary humanities operate, mostly without naming it, in the hermeneutic mode.`,
+    sources: [
+      { title: "Gadamer, Truth and Method", cite: "trans. Weinsheimer & Marshall, Bloomsbury 2013 (orig. 1960)" },
+      { title: "Ricoeur, From Text to Action", cite: "Northwestern UP 1991" },
+    ],
+  },
+  {
+    id: "idealism",
+    slug: "idealism",
+    name: "Idealism",
+    difficulty: "intermediate",
+    theme: "metaphysics",
+    philosopherIds: ["berkeley", "kant", "hegel"],
+    shortSummary:
+      "The family of metaphysical positions holding that reality is, in some fundamental sense, mental or mind-dependent. The varieties differ sharply, but each is doing work materialism cannot quite do.",
+    fullBody: `Idealism is the broad metaphysical position that mind, ideas, or consciousness is in some way ontologically fundamental — that reality is structured by, dependent on, or reducible to mental things rather than material ones.
+
+The varieties differ substantially. *Subjective idealism* (Berkeley) holds that what exists are minds and the ideas in them; physical objects are bundles of perceptions, sustained by God. *Transcendental idealism* (Kant) makes a more careful claim: the world of experience is structured by the forms of intuition (space, time) and the categories of the understanding that the mind contributes, while the thing-in-itself remains unknowable. *Absolute idealism* (Hegel, Schelling, Fichte) is the most ambitious — reality is the self-realization of a single rational spirit (*Geist*) through history.
+
+Twentieth-century analytic philosophy was, by and large, hostile to idealism, partly because of Moore's 1903 *Refutation of Idealism* and partly because the verificationist movements that followed found idealism's claims hard to formulate empirically. The continental tradition has been more sympathetic; recent revival in speculative realism circles has produced renewed interest.
+
+The hard part: idealism is constantly accused of being defeated by simple observations ("you can't think a tree out of existence!") that, on careful reading, none of the major idealists ever denied. The position is harder to refute than dismissal suggests, and arguments for it ("how can a mind-independent reality be coherently described, given that all our descriptions are mind-shaped?") are not trivial.`,
+    sources: [
+      { title: "Idealism (SEP)", cite: "Guyer, P. & Horstmann, R-P. SEP entry 'Idealism'", url: "https://plato.stanford.edu/entries/idealism/" },
+    ],
+  },
+  {
+    id: "materialism",
+    slug: "materialism",
+    name: "Materialism",
+    difficulty: "intermediate",
+    theme: "metaphysics",
+    philosopherIds: ["democritus", "lucretius", "marx"],
+    shortSummary:
+      "The view that everything that exists is physical, or supervenes on the physical. The dominant ontology of contemporary science, but the relation between mind, value, and meaning to the physical remains contested.",
+    fullBody: `Materialism is the metaphysical view that everything that exists is physical, or that everything that exists supervenes on physical facts. The view has ancient roots (Democritus and the atomists, Epicurus, Lucretius) and is the dominant ontology of contemporary science.
+
+The contemporary scene is more careful than "everything is material." *Physicalism* — usually the preferred contemporary term — holds that everything supervenes on the physical, leaving room for emergent properties, multiple realization, and other complications the eliminative materialists of an earlier generation rejected.
+
+Several hard problems persist within the broadly materialist tradition. *Consciousness* — the explanatory gap between physical descriptions of brain states and the subjective character of experience — is the most contested. *Mathematical and logical truths* — what makes 7 + 5 = 12 true in a way that requires nothing material? *Moral truths* — if any exist, can they be reduced to the natural? *Meaning* — Quine and Davidson worried about what physical facts could fix the meaning of a sentence.
+
+Marxist materialism is a separate development: historical materialism is the thesis that the material conditions of production shape social, political, and intellectual life (the *base* / *superstructure* distinction). The thesis is sometimes confused with the metaphysical version, though they are logically independent.`,
+    sources: [
+      { title: "Lucretius, De Rerum Natura", cite: "Books I–III on atoms and the soul" },
+      { title: "Physicalism (SEP)", cite: "Stoljar, D. SEP entry 'Physicalism'", url: "https://plato.stanford.edu/entries/physicalism/" },
+    ],
+  },
+  {
+    id: "dualism",
+    slug: "dualism",
+    name: "Dualism",
+    difficulty: "intermediate",
+    theme: "mind",
+    philosopherIds: ["descartes"],
+    shortSummary:
+      "The view that mind and body are distinct kinds of thing. Descartes is the classical exponent, and his position has been argued against constantly for four centuries — but its hard problems (consciousness, intentionality) keep not going away.",
+    fullBody: `Mind-body dualism is the view that minds and bodies are distinct ontological kinds — that the mental is not reducible to the physical or identical with anything physical.
+
+Descartes' *substance dualism* in the *Meditations* (1641) is the historical reference point. Minds are essentially thinking, unextended; bodies are essentially extended, non-thinking. The view immediately raised the interaction problem: how does an unextended mind cause changes in an extended body, or receive changes from it? Descartes' proposed answer — that the interaction happens at the pineal gland — is the famous failure of the position.
+
+Subsequent dualism is more careful. *Property dualism* holds that mental properties are not reducible to physical properties, even if the only substance is physical. Some versions of *non-reductive physicalism* are close to property dualism in practice. *Emergent dualism* (a position with current defenders like William Hasker) holds that mental properties genuinely emerge from but are not reducible to neural ones.
+
+Contemporary philosophy of mind is dominated by various forms of monism (most commonly physicalism), but dualism has had a low-key revival through David Chalmers' *naturalistic dualism* (1996) and the broader hard-problem literature. The intuition that subjective experience is not the same kind of thing as neural firing has proven harder to refute than mid-twentieth-century materialists assumed.`,
+    sources: [
+      { title: "Descartes, Meditations", cite: "II and VI on the real distinction between mind and body" },
+      { title: "Dualism (SEP)", cite: "Robinson, H. SEP entry 'Dualism'", url: "https://plato.stanford.edu/entries/dualism/" },
+    ],
+  },
+  {
+    id: "determinism",
+    slug: "determinism",
+    name: "Determinism",
+    difficulty: "intermediate",
+    theme: "metaphysics",
+    philosopherIds: [],
+    shortSummary:
+      "The view that every event, including every human choice, is fixed by prior causes and the laws of nature. If true, what we ordinarily call free will is at best a kind of useful illusion. Compatibilists argue the dichotomy is the wrong way to frame the question.",
+    fullBody: `Determinism is the metaphysical view that everything that happens is the unique outcome of prior conditions and the laws of nature. The position is sometimes mistakenly equated with fatalism (which adds the claim that human effort makes no difference); they are logically distinct.
+
+The major contemporary version is *causal determinism*: at any given time, the laws of nature plus the complete state of the universe uniquely determine the next state. Classical mechanics was thought to be deterministic in this sense; quantum mechanics complicates the picture, though whether quantum indeterminacy is real (and at what scale) remains contested.
+
+The contrast position is *indeterminism*: at least some events are not uniquely determined by their causes. Within indeterminism, *libertarianism* about free will adds the claim that human choices fall in the indetermined gap, and that our agency requires this.
+
+*Compatibilism* — the view of Hume, Hobbes, Frankfurt, Dennett, and probably most contemporary analytic philosophers — argues that the dichotomy is the wrong frame. Free will, on compatibilist accounts, doesn't require indeterminism; it requires that one's choices flow from one's own desires and reasons without external coercion, even if those desires and reasons are themselves causally embedded. The intuition that "real" free will requires a break in the causal chain depends, the compatibilist argues, on a confused picture of what we wanted from agency in the first place.`,
+    sources: [
+      { title: "Causal Determinism (SEP)", cite: "Hoefer, C. SEP entry 'Causal Determinism'", url: "https://plato.stanford.edu/entries/determinism-causal/" },
+    ],
+  },
+  {
+    id: "absurdism",
+    slug: "absurdism",
+    name: "The Absurd",
+    difficulty: "beginner",
+    theme: "ethics",
+    philosopherIds: ["camus", "kierkegaard"],
+    shortSummary:
+      "The condition produced by the collision between humanity's demand for meaning and a universe that supplies none. Camus thought the proper response was neither suicide nor a leap of faith but lucid revolt — Sisyphus, happy.",
+    fullBody: `The absurd, as Camus develops it in *The Myth of Sisyphus* (1942), names not a property of the universe but a *relation*: between humans, who demand meaning and intelligibility from existence, and a universe that supplies none. Either side could remove the absurd. A meaningful universe would; a humanity that did not demand meaning would. Neither obtains.
+
+Camus' question — given this condition, is suicide rational? — opens the book. His answer is no, but for non-obvious reasons. *Philosophical suicide* (Kierkegaard's leap of faith, Husserl's transcendental reduction) tries to dissolve the absurd by abandoning one side of the relation. *Actual suicide* removes the absurd by removing the subject who needed meaning. Both are evasions.
+
+The recommended response is *revolt* — sustained, lucid awareness of the absurd, refusing to dissolve it. Sisyphus, condemned to roll a boulder up a hill forever only to watch it roll back down, is the figure of the absurd hero. The boulder is futile; Sisyphus is not. He is the man who keeps his consciousness intact in the face of futility, and who finds — Camus closes the book here — that one must imagine Sisyphus happy.
+
+The position is sometimes confused with nihilism and sometimes with existentialism. Camus refused both labels. Absurdism is closer to a stoic posture that has lost the Stoic's metaphysical confidence.`,
+    sources: [
+      { title: "Camus, The Myth of Sisyphus", cite: "trans. Justin O'Brien, Vintage 1955 (orig. 1942)" },
+    ],
+  },
+  {
+    id: "consciousness",
+    slug: "consciousness",
+    name: "Consciousness",
+    difficulty: "advanced",
+    theme: "mind",
+    philosopherIds: ["dennett", "searle"],
+    shortSummary:
+      "The fact that there is something it is like to be a conscious being — and the persistent failure of every reductive theory to account for that fact. The 'hard problem' has shaped philosophy of mind for thirty years.",
+    fullBody: `Consciousness, in the contemporary philosophical sense, names the subjective character of experience — that there is something it is like to be you, to see red, to feel pain, to taste coffee. Thomas Nagel's "What Is It Like to Be a Bat?" (1974) crystallized the question; David Chalmers' "Facing Up to the Problem of Consciousness" (1995) gave it the name *the hard problem*.
+
+The hard problem is distinguished from a series of *easy problems*: how the brain processes sensory information, integrates it into a unified representation, produces reportable contents, controls attention, and so on. These are difficult empirical questions that contemporary neuroscience is making progress on. The hard problem asks why any of these information-processing facts are accompanied by subjective experience at all. A perfectly functional zombie — physically identical to me but with no inner life — seems coherently conceivable, on Chalmers' analysis, in a way that strict physicalism cannot accommodate.
+
+The major positions: *physicalism* in various forms (reductive, non-reductive, eliminative — Dennett's *Consciousness Explained*); *property dualism* (Chalmers' own position); *panpsychism* (consciousness as a fundamental and ubiquitous feature, scaled up from very primitive bases in all physical systems — Galen Strawson, recent Chalmers); *higher-order theories* (consciousness as a higher-order representation of mental states); *integrated information theory* (Tononi's IIT, a quantitative theory popular in neuroscience).
+
+Whether the hard problem is genuinely intractable, or merely currently intractable, or in fact a confusion, is the disagreement that organizes the field. There is no consensus and the disagreement is substantive.`,
+    sources: [
+      { title: "Consciousness (SEP)", cite: "Van Gulick, R. SEP entry 'Consciousness'", url: "https://plato.stanford.edu/entries/consciousness/" },
+      { title: "Chalmers, The Conscious Mind", cite: "Oxford UP 1996" },
+    ],
+  },
 ];
 
 export function getConcept(slug: string): Concept | undefined {

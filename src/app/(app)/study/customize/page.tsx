@@ -12,7 +12,7 @@ import { useRouter } from "next/navigation";
 import type { Theme, Era, Region } from "@/lib/types";
 import { Shuffle, Sparkles } from "lucide-react";
 
-const THEMES: Theme[] = ["metaphysics", "ethics", "epistemology", "mind", "politics", "aesthetics", "religion", "logic"];
+const THEMES: Theme[] = ["metaphysics", "ethics", "epistemology", "mind", "politics", "aesthetics", "religion", "logic", "science", "language"];
 const ERAS: Era[] = ["ancient", "medieval", "early-modern", "modern", "contemporary"];
 const REGIONS: Region[] = ["greek", "roman", "east-asian", "south-asian", "islamic", "european", "african", "american"];
 const TYPES = [

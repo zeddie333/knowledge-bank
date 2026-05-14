@@ -8,7 +8,7 @@ export default function ThoughtExperimentsIndex() {
     <div className="space-y-8">
       <header>
         <p className="font-sans text-xs uppercase tracking-widest text-muted-foreground">
-          Thought experiments
+          Thought Experiments
         </p>
         <h1 className="mt-1 font-serif text-3xl tracking-tight">The experience of doing philosophy</h1>
         <p className="mt-2 max-w-prose text-foreground/80">

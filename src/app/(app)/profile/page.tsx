@@ -21,6 +21,8 @@ const THEMES: Theme[] = [
   "aesthetics",
   "religion",
   "logic",
+  "science",
+  "language",
 ];
 
 export default function ProfilePage() {

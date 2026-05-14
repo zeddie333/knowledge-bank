@@ -253,6 +253,148 @@ export const THOUGHT_EXPERIMENTS: ThoughtExperiment[] = [
     relatedPhilosopherIds: ["foot", "singer"],
     relatedConceptIds: ["categorical-imperative", "natural-law"],
   }),
+
+  te({
+    id: "brain-in-vat",
+    slug: "brain-in-a-vat",
+    title: "Brain in a Vat",
+    setup:
+      "Imagine a mad scientist has removed your brain and is keeping it alive in a vat of nutrients, feeding it electrical impulses that simulate a perfectly normal life. From the inside, the experience is indistinguishable from the real thing. There is no test you could conduct to tell.",
+    question: "Could you know that you're not a brain in a vat right now?",
+    options: [
+      { id: "no", label: "No — by hypothesis, nothing in experience would distinguish the two." },
+      { id: "yes", label: "Yes — there are arguments (semantic externalism, transcendental conditions) that rule it out." },
+      { id: "wrong-q", label: "The question itself is malformed." },
+    ],
+    reveal: [
+      { position: "The case is the modern descendant of Descartes' evil-demon hypothesis in Meditation I. It motivates Cartesian-style skepticism without requiring any theological apparatus." },
+      { position: "Hilary Putnam (Reason, Truth, and History, 1981) gave the most discussed reply: if you were a brain in a vat, the term 'brain in a vat' as you used it would refer to features of your simulated world, not to actual brains in actual vats. So the sentence 'I am a brain in a vat' would, on this analysis, be self-defeating — semantically incapable of expressing the truth it would have to express. The reply is itself contested." },
+      { position: "Contemporary epistemology has largely abandoned the project of refuting the scenario in favor of asking what it shows about the structure of knowledge claims — particularly whether knowledge is closed under entailment, and what role context plays in determining what counts as knowing." },
+    ],
+    relatedPhilosopherIds: ["descartes", "putnam"],
+    relatedConceptIds: ["cogito", "mind-body"],
+  }),
+  te({
+    id: "ring-of-gyges",
+    slug: "ring-of-gyges",
+    title: "The Ring of Gyges",
+    setup:
+      "Glaucon's challenge to Socrates in Republic II. A shepherd named Gyges finds a ring that makes the wearer invisible. He uses it to seduce the queen, kill the king, and take the throne. Glaucon asks: would any of us — given the ring — behave differently? Or is what we call 'just' behavior really just the behavior we adopt because we lack the power to act otherwise without consequence?",
+    question: "Would the just person behave differently if they could become invisible?",
+    options: [
+      { id: "yes", label: "Yes — the just person values justice for its own sake, not for the consequences." },
+      { id: "no", label: "No — what we call 'justice' is just the prudent management of social consequences." },
+      { id: "complicated", label: "Most of us would behave worse than we admit — but that doesn't make justice mere appearance." },
+    ],
+    reveal: [
+      { position: "Plato spends the rest of the Republic answering: the truly just person, whose soul is in proper order, would not use the ring badly, because the disordered soul produced by tyranny is itself the worst harm. Acting unjustly damages the agent more than any external consequence." },
+      { position: "Glaucon's challenge survives Plato's answer because it points at something real: most ordinary 'morality' may be conditioned by social mechanisms of accountability that the ring removes. Hobbes treats this as a feature of his political theory; the Stoics dispute it; the Christian tradition reframes it as the question of why one would be moral if God did not see." },
+      { position: "Contemporary moral psychology has empirical analogs — anonymity effects in cheating studies, online disinhibition. The Gyges challenge is still being argued with." },
+    ],
+    relatedPhilosopherIds: ["plato"],
+    relatedConceptIds: ["eudaimonia"],
+  }),
+  te({
+    id: "heinz-dilemma",
+    slug: "heinz-dilemma",
+    title: "The Heinz Dilemma",
+    setup:
+      "Heinz's wife is dying of a rare cancer. There is one drug that can save her, but the pharmacist who developed it charges ten times what it cost to make. Heinz can only raise half the money; the pharmacist refuses to lower the price or let Heinz pay over time. That night, Heinz breaks into the pharmacy and steals the drug.",
+    question: "Was Heinz right to steal the drug?",
+    options: [
+      { id: "yes", label: "Yes — a human life outweighs property." },
+      { id: "no", label: "No — stealing is wrong regardless of the cause." },
+      { id: "complicated", label: "The case shows the limits of any rule-based answer." },
+    ],
+    reveal: [
+      { position: "The case is from Lawrence Kohlberg's research on moral development. Kohlberg argued that responses fall into six stages of moral reasoning, from purely consequentialist self-interest at the bottom to principled justice at the top." },
+      { position: "Carol Gilligan's critique (In a Different Voice, 1982) argued that Kohlberg's framework systematically devalued an alternative pattern of moral reasoning — an 'ethics of care' that focuses on relationships and responsibilities rather than abstract principles. Gilligan's data: women interviewees were more likely to ask about Heinz's wife as a particular person, the pharmacist's situation, what could be negotiated. Kohlberg coded these answers as lower-stage reasoning. Gilligan argued they expressed a different but equally sophisticated moral orientation." },
+      { position: "The case is now a fixture of moral psychology and care-ethics literature, and a useful illustration of how the framing of a moral dilemma encodes assumptions about what counts as moral reasoning." },
+    ],
+    relatedPhilosopherIds: [],
+    relatedConceptIds: ["categorical-imperative", "natural-law"],
+  }),
+  te({
+    id: "experience-of-color",
+    slug: "experience-of-color",
+    title: "Inverted Spectrum",
+    setup:
+      "Imagine someone whose color experiences are systematically inverted relative to yours — when they look at what you call red, they have the experience you would call seeing green, and vice versa. From birth they have learned to call the inverted-red color 'red' and so on. Their behavior is identical to yours; their reports are identical. They drive on the same red light.",
+    question: "Could there be such a person, undetectable from outside?",
+    options: [
+      { id: "yes", label: "Yes — qualia are intrinsic features of experience that can vary independently of function." },
+      { id: "no", label: "No — if everything functional is identical, the experience is identical." },
+      { id: "depends", label: "Depends on whether color experiences are exhaustively functional." },
+    ],
+    reveal: [
+      { position: "The case goes back to Locke's Essay (II.32). Its philosophical importance was revived in the contemporary qualia debates. If inverted spectra are possible while functional behavior is identical, then functionalism is incomplete — there is something about experience that the functional description leaves out." },
+      { position: "Functionalists deny the possibility. The argument: what makes a color experience the kind it is, is its functional role in cognition and behavior. If two systems are functionally identical, their color experiences are identical." },
+      { position: "Contemporary defenders of qualia (Chalmers, Block) treat the inverted spectrum as a serious live possibility. The empirical question whether there are actual humans whose color experiences differ in this kind of way — across the cone-cell variation, color-blindness types, etc. — connects philosophy of mind to perception science." },
+    ],
+    relatedPhilosopherIds: ["dennett"],
+    relatedConceptIds: ["qualia", "consciousness", "mind-body"],
+  }),
+  te({
+    id: "teletransporter",
+    slug: "teletransporter",
+    title: "Parfit's Teletransporter",
+    setup:
+      "A teletransporter scans your body atom by atom, transmits the information to a receiver on another planet, and reconstructs you there from local matter. The original you is destroyed in the scanning. The reconstructed you wakes up on the other planet with all your memories, personality, plans, and projects intact. You step into the scanner.",
+    question: "Does the same person walk out?",
+    options: [
+      { id: "yes", label: "Yes — the reconstruction is functionally identical." },
+      { id: "no", label: "No — the original is dead. Something else is on the other planet with my memories." },
+      { id: "doesnt-matter", label: "It doesn't matter — identity isn't what matters." },
+    ],
+    reveal: [
+      { position: "Derek Parfit (Reasons and Persons, 1984) used the case to argue that personal identity is not what we ordinarily think. What matters in survival is psychological continuity and connectedness, not strict identity. The reconstructed person is connected to you in all the ways that matter; whether they are 'identical' to you is a separate, and probably less important, question." },
+      { position: "Branch-line cases push the intuition harder. Imagine the scanner malfunctions: the original is not destroyed, and the copy is created. Now there are two of you. Which one is the 'real' you? Parfit's answer: the question has no fact-of-the-matter answer; what matters is that both are continuous with the pre-scan person." },
+      { position: "Animalist theories of personal identity (Eric Olson) reject Parfit's framework: you are an animal, the animal is in the scanner, the animal is destroyed, and what comes out the other end is a different animal with someone else's memories." },
+    ],
+    relatedPhilosopherIds: ["parfit"],
+    relatedConceptIds: ["sunyata"],
+  }),
+  te({
+    id: "molyneux",
+    slug: "molyneuxs-question",
+    title: "Molyneux's Question",
+    setup:
+      "A man born blind has learned to distinguish a cube from a sphere by touch. One day, his vision is restored. Looking at a cube and a sphere on a table in front of him, without touching them, can he tell which is which?",
+    question: "Could the newly-sighted man identify the shapes by sight alone?",
+    options: [
+      { id: "yes", label: "Yes — geometric properties are shared across senses." },
+      { id: "no", label: "No — the senses are originally distinct; integration is learned." },
+      { id: "empirical", label: "It's an empirical question, not one to settle from the armchair." },
+    ],
+    reveal: [
+      { position: "William Molyneux asked Locke this question in 1688. Locke (Essay II.9), Berkeley (New Theory of Vision), and Leibniz disagreed about the answer. Locke and Berkeley said no — vision and touch produce distinct ideas that must be learned to correlate. Leibniz said yes — geometric facts are accessible to reason regardless of how the senses present them." },
+      { position: "The case became important in the empiricist/rationalist debate. If sensory ideas come from experience alone (the empiricist position), the newly-sighted person has no basis for identification. If geometric concepts are accessible to reason itself (the rationalist position), they should be." },
+      { position: "Modern surgical restoration of sight has now allowed empirical testing of the question. The results — initially confused identification followed by rapid learning — are not what either Locke or Leibniz exactly predicted. The case is one of the rare philosophical thought experiments that turned out to admit of empirical resolution." },
+    ],
+    relatedPhilosopherIds: ["locke", "berkeley", "leibniz"],
+    relatedConceptIds: ["cogito"],
+  }),
+  te({
+    id: "demon-of-eternal-recurrence",
+    slug: "demon-of-eternal-recurrence",
+    title: "The Demon of Eternal Recurrence",
+    setup:
+      "A demon comes to you in your loneliest hour and tells you: this life as you live it now and have lived it, you will have to live once more and innumerable times more; and there will be nothing new in it, but every pain and every joy and every thought and sigh and everything unspeakably small or great in your life will return to you, all in the same succession and sequence.",
+    question: "How would you respond to the demon?",
+    options: [
+      { id: "gnash", label: "Curse the demon. The thought of this is intolerable." },
+      { id: "affirm", label: "Praise the demon. There is nothing I would change." },
+      { id: "neither", label: "Some mix — I would gnash, then perhaps come to affirm." },
+    ],
+    reveal: [
+      { position: "Nietzsche puts this in the mouth of a demon at Gay Science §341. The thought experiment is not a metaphysical claim about the universe. It is a test of your relation to your own life." },
+      { position: "Most of us, Nietzsche thinks, could not affirm the recurrence. We hold parts of our lives at arm's length — humiliations, decisions, betrayals — and the inability to integrate them is what resentment, weakness, and bad faith feed on." },
+      { position: "The capacity to affirm the recurrence — to will it — is what Nietzsche calls saying yes to existence, and what he names amor fati. It is presented as an aspiration, not an easy result." },
+      { position: "The thought experiment was important enough to Nietzsche that he treated it, in some of his unpublished notes, as the central thought of his philosophy." },
+    ],
+    relatedPhilosopherIds: ["nietzsche"],
+    relatedConceptIds: ["eternal-recurrence", "amor-fati"],
+  }),
 ];
 
 export function getThoughtExperiment(slug: string): ThoughtExperiment | undefined {

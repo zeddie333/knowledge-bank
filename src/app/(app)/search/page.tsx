@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -32,7 +33,9 @@ function score(q: string, ...fields: string[]): number {
 }
 
 export default function SearchPage() {
-  const [q, setQ] = React.useState("");
+  const params = useSearchParams();
+  const initial = params.get("q") ?? "";
+  const [q, setQ] = React.useState(initial);
 
   const hits = React.useMemo<Hit[]>(() => {
     if (q.trim().length < 2) return [];

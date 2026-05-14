@@ -29,7 +29,7 @@ const SECONDARY = [
   { href: "/search", label: "Search", icon: Search },
   { href: "/tutor", label: "Tutor", icon: MessageCircle },
   { href: "/knowledge-web", label: "Knowledge Web", icon: Network },
-  { href: "/thought-experiments", label: "Thought experiments", icon: Beaker },
+  { href: "/thought-experiments", label: "Thought Experiments", icon: Beaker },
 ];
 
 function NavLink({

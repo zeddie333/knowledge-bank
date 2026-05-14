@@ -815,6 +815,134 @@ The school's relationship to Japanese nationalism during the 1930s and 40s is on
 Contemporary engagement with the Kyoto School has been growing, particularly in comparative philosophy and in dialogue with phenomenology and Buddhist studies.`,
   },
   // ---- Madhyamaka (already in V1) reused ----
+
+  // ---- Added in current expansion ----
+  {
+    id: "liberalism",
+    slug: "liberalism",
+    name: "Liberalism",
+    eraStart: 1680,
+    eraEnd: null,
+    region: "european",
+    philosopherIds: ["locke", "mill", "rawls", "nozick", "taylor"],
+    shortSummary:
+      "The political tradition built around the individual as the basic unit of moral and political concern, the limited and accountable state, and the rights that constrain what governments can do. Has split into incompatible branches but remains the dominant political philosophy of the West.",
+    fullBody: `Liberalism is the broad political tradition that begins with John Locke's *Two Treatises of Government* (1689) and develops across Smith, Bentham, Mill, the framers of the US Constitution, and twentieth-century thinkers from Rawls to Hayek to Nozick.
+
+The shared commitments — held in different forms by different liberals — include: the individual person as the basic unit of moral and political concern; rights (whatever their grounding) that constrain what the state may do to individuals; government legitimated by some form of consent or accountability to the governed; toleration of differing comprehensive views about how to live; some space, called the private sphere or civil society, that the state does not directly govern.
+
+The internal disagreements are sharp. *Classical liberalism* (Locke, Smith, Mill, Hayek) emphasizes negative liberty and limited government. *Egalitarian liberalism* (Rawls, Dworkin) takes substantive economic and social equality as part of what liberalism requires. *Libertarianism* (Nozick) treats Lockean property rights as nearly inviolable. *Welfare liberalism* (Roosevelt-era progressivism) builds large redistributive states inside liberal frameworks.
+
+Liberalism has been criticized from the left (Marx: it masks class domination; Mbembe: it presupposes a universal humanity it never actually extended), from the right (Schmitt: it cannot make hard political decisions; communitarians: it abstracts persons from the communities that constitute them), and from within (feminist critics like Susan Moller Okin: it ignores the family). Its dominance is contested but persistent.`,
+  },
+  {
+    id: "anarchism",
+    slug: "anarchism",
+    name: "Anarchism",
+    eraStart: 1840,
+    eraEnd: null,
+    region: "european",
+    philosopherIds: [],
+    shortSummary:
+      "The political tradition that holds the state to be neither necessary nor justifiable. Internally fragmented (individualist, communist, syndicalist, mutualist, anarcho-feminist) but united by skepticism of coercive authority as the organizing principle of human life.",
+    fullBody: `Anarchism as a self-conscious political tradition begins with Pierre-Joseph Proudhon (*What Is Property?*, 1840), Mikhail Bakunin, Peter Kropotkin, and Emma Goldman in the nineteenth century, with antecedents reaching back to William Godwin and the radical Christian and Daoist traditions.
+
+The shared claim: the coercive state — whether monarchical, liberal-democratic, or socialist — is neither necessary nor justifiable. Human flourishing is better served by voluntary association, mutual aid, and decentralized self-organization than by hierarchical authority backed by the threat of force.
+
+The internal varieties differ substantially. *Individualist anarchism* (Stirner, Tucker) emphasizes the sovereignty of the individual against any coercive collective. *Anarcho-communism* (Kropotkin, Goldman) treats communal property and mutual aid as the natural alternative to both state and capital. *Anarcho-syndicalism* takes worker-run unions as the organizational form of post-state society. *Mutualism* (Proudhon) builds around credit cooperatives and reciprocal exchange. Contemporary *anarcha-feminism*, *queer anarchism*, and *green anarchism* add further dimensions.
+
+Anarchism is regularly dismissed by mainstream political philosophy as utopian, but its diagnostic critiques — of the state's monopoly on legitimate violence, of the way liberal democracies depend on coercion they don't acknowledge, of the historical record of revolutionary socialism actually producing new states — have a way of returning when other traditions exhaust themselves. The intellectual revival in late-twentieth-century social movements (Graeber, Bookchin, the alter-globalization movement) reflects this.`,
+  },
+  {
+    id: "deconstruction",
+    slug: "deconstruction",
+    name: "Deconstruction",
+    eraStart: 1967,
+    eraEnd: null,
+    region: "european",
+    philosopherIds: ["derrida"],
+    shortSummary:
+      "Derrida's method of reading. Not 'destroy' — that's the standard misreading. Deconstruction finds, in any sufficiently complex text, the points at which its own argument depends on the very things it tries to exclude.",
+    fullBody: `Deconstruction is Jacques Derrida's method, developed across *Of Grammatology* (1967), *Writing and Difference* (1967), and *Speech and Phenomena* (1967), and elaborated through dozens of subsequent books.
+
+The label is misleading. *Deconstruct* is not "demolish" or "show to be false." Deconstructive reading takes a text on its own terms, follows its argument carefully, and shows that the text's stated position depends — for the very coherence of its formulation — on the things it tries to exclude. The most famous examples are Derrida's readings of Plato (the *Phaedrus* on writing), Rousseau (the *Essay on the Origin of Languages*), Husserl, and Saussure. In each, the hierarchical opposition the author thinks he is establishing turns out, on close reading, to be one the text cannot maintain.
+
+The political and ethical force of deconstruction has been the most disputed element. Critics (Habermas, Searle) read it as a kind of sophisticated relativism that erases the possibility of substantive argument. Defenders argue that deconstruction is a discipline of careful reading that exposes precisely the kinds of premature closure (in politics, in metaphysics, in the canon of texts deemed worth reading) that have historically been used to suppress the perspectives, persons, and questions excluded by them.
+
+Late Derrida wrote increasingly explicitly about justice, hospitality, mourning, and democracy — arguing that deconstruction itself is, in a precise sense, *justice* — the never-completed responsiveness to what cannot be fully captured by any existing framework.`,
+  },
+  {
+    id: "queer-theory",
+    slug: "queer-theory",
+    name: "Queer Theory",
+    eraStart: 1990,
+    eraEnd: null,
+    region: "american",
+    philosopherIds: ["butler", "foucault"],
+    shortSummary:
+      "The body of theoretical work — Butler, Sedgwick, Edelman, Halberstam — that takes the constructedness of sexual and gendered identity seriously without thereby denying its political reality. Builds on Foucault, Derrida, and feminist theory.",
+    fullBody: `Queer theory crystallized as a distinct field in the early 1990s, with Eve Kosofsky Sedgwick's *Epistemology of the Closet* (1990), Judith Butler's *Gender Trouble* (1990), and Teresa de Lauretis' use of "queer theory" as a working term at a 1990 UC Santa Cruz conference.
+
+The shared commitments: gender and sexual identity are not natural categories with discoverable boundaries but historically constituted formations whose apparent stability is a product of repeated institutional and social practice. The hetero/homo binary, the male/female binary, the cis/trans distinction, the normal/abnormal valuation — each is a system whose violence is partly hidden by its presentation as neutral description.
+
+Foucault's *History of Sexuality* (1976) is the major intellectual precondition. His argument that modern sexuality was not repressed but *produced* by the disciplinary regimes that claimed to manage it gave queer theory its central methodological move. Butler's *performativity* (gender as the iterated performance that produces what it appears merely to express) gave it the conceptual tool that travels most widely outside specialist contexts.
+
+The internal disputes — between assimilationist and anti-assimilationist tendencies, between universalist and minoritizing claims, between queer theory and trans studies — have been productive. The field has now generated a substantial second and third generation (Halberstam, Edelman, Muñoz, Ahmed, Puar) whose work moves in directions the founders did not anticipate.`,
+  },
+  {
+    id: "transhumanism",
+    slug: "transhumanism",
+    name: "Transhumanism",
+    eraStart: 1957,
+    eraEnd: null,
+    region: "american",
+    philosopherIds: [],
+    shortSummary:
+      "The position that humanity should use technology to transcend its current biological limits — extending life, enhancing cognition, eliminating involuntary suffering. Started as a fringe position; now adjacent to (and often arguing with) AI safety, longevity research, and the broader rationalist movement.",
+    fullBody: `Transhumanism takes the name from Julian Huxley's 1957 essay "Transhumanism," but its philosophical roots run through Enlightenment thinkers (Condorcet, Godwin) who anticipated technologies that would extend human life and capacities. The contemporary movement emerged in the 1980s and 90s around figures like FM-2030 (formerly F.M. Esfandiary), Max More, and Nick Bostrom, and stabilized through the World Transhumanist Association (later Humanity+).
+
+The substantive commitments vary, but commonly include: longevity and life extension as ethical priorities; cognitive enhancement (through technology, biology, or both) as broadly desirable; the cryonic preservation of brain or body in case future technology can revive; the eventual possibility of mind-uploading or substrate-independent personal continuity; some form of openness to artificial general intelligence as a development to engage rather than reject.
+
+The philosophical literature ranges from Bostrom's careful work on existential risk and the simulation argument, to more speculative positions on the long-term future and the cosmological implications of indefinite life extension. The movement overlaps significantly with the contemporary AI safety / AI alignment field, the rationalist community around LessWrong, and the longevity research community.
+
+Criticism has been substantial. Religious traditions object that transhumanism evades the proper acknowledgment of finitude and creaturely limit. Egalitarian critics worry that enhancement technologies will deepen existing inequalities catastrophically. Conservative critics from Leon Kass onward argue that the transhumanist project mistakes what makes a life worth living. The debate is increasingly important as the technologies the movement anticipated start to become real.`,
+  },
+  {
+    id: "mysticism",
+    slug: "mysticism",
+    name: "Mysticism",
+    eraStart: -500,
+    eraEnd: null,
+    region: "european",
+    philosopherIds: ["plotinus", "ibn-arabi", "schuon"],
+    shortSummary:
+      "The current that runs across most major religious traditions, holding that the highest knowledge of ultimate reality is direct experiential acquaintance rather than discursive reasoning. Plotinus, the Christian mystics, the Sufis, the Vedāntins.",
+    fullBody: `Mysticism is the cross-traditional name for the currents within major religious and philosophical traditions that hold the highest form of knowledge of ultimate reality to be *direct experiential acquaintance* — variously called *gnosis*, *theoria*, *fana*, *samādhi*, *mokṣa* — rather than the discursive reasoning that ordinary philosophy and theology rely on.
+
+The phenomenon is genuinely cross-cultural. Within Christianity: Pseudo-Dionysius the Areopagite (5th c.), Meister Eckhart, Saint Teresa of Ávila, John of the Cross, the Cloud of Unknowing. Within Judaism: the Kabbalistic tradition. Within Islam: the Sufi orders. Within Hinduism: the Upaniṣadic and Advaita traditions. Within Buddhism: the meditative traditions across schools. Within Greek philosophy: Plotinus and the Neoplatonic tradition.
+
+The philosophical questions mysticism raises are sharp. What is the epistemic status of mystical experience? William James (*Varieties of Religious Experience*, 1902) argued that mystical experiences have characteristic features — ineffability, noetic quality, transiency, passivity — across traditions, and that they constitute genuine knowledge from the experiencer's perspective even if their content cannot be straightforwardly verified externally. Steven Katz argued (1978) that mystical experiences are themselves always tradition-shaped, not raw uninterpreted data. The debate continues.
+
+The Perennialist tradition (Guénon, Schuon, Coomaraswamy, Lings, Nasr) reads the cross-traditional structure as evidence of a single underlying metaphysical reality that all the traditions are approaching from different cultural starting points. Critics argue this overstates the structural similarity and projects a specific (often Advaitin or Sufi) metaphysics onto traditions whose own self-understanding differs.`,
+  },
+  {
+    id: "buddhism-umbrella",
+    slug: "buddhism",
+    name: "Buddhism (umbrella)",
+    eraStart: -500,
+    eraEnd: null,
+    region: "south-asian",
+    philosopherIds: ["buddha", "nagarjuna", "vasubandhu", "dogen"],
+    shortSummary:
+      "The 2,500-year-old tradition that begins with the Buddha and develops across the Theravāda, Mahāyāna, and Vajrayāna lineages, including Madhyamaka, Yogācāra, and Chan/Zen.",
+    fullBody: `Buddhism is the family of philosophical and religious traditions that traces back to the Buddha's teaching in north India in roughly the fifth century BCE. The early teachings — preserved in the Pali Canon — center on the Four Noble Truths (suffering exists, has a cause, can end, and there is a path that ends it) and the doctrine of *anātman* (no permanent self).
+
+Buddhism splits into three major branches. *Theravāda* ("the teaching of the elders") is the southern Buddhism of Sri Lanka and Southeast Asia, conservative in its claim to preserve the earliest teachings and focused on individual liberation through the Eightfold Path. *Mahāyāna* ("the great vehicle") emerges around the first century CE and develops the Bodhisattva ideal — liberation pursued for the sake of all sentient beings — alongside the philosophical schools (Madhyamaka, Yogācāra) that gave Buddhism much of its conceptual depth. *Vajrayāna* ("the diamond vehicle") is the tantric tradition of Tibet and parts of East Asia, integrating Mahāyāna philosophy with ritual practice and meditative discipline aimed at accelerated liberation.
+
+The major philosophical contributions: the *anātman* doctrine (no self) and its long working-out across the Abhidharma; Nāgārjuna's Madhyamaka (no own-being, dependent origination, two truths); Yogācāra's consciousness-only thesis and analysis of the *ālaya-vijñāna* (storehouse consciousness); the Chan/Zen tradition's claim that the highest insight is direct rather than scriptural; the Tibetan tradition's syncretic preservation of nearly all the earlier philosophical schools alongside its own tantric developments.
+
+The encounter between Buddhism and Western philosophy has been productive in both directions over the last two centuries, particularly around questions of mind, consciousness, no-self, and the metaphysics of dependence.`,
+  },
 ];
 
 export function getSchool(slug: string): School | undefined {

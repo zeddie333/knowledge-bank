@@ -54,6 +54,13 @@ export const SCHOOL_IMAGES: Record<string, string> = {
   "perennialism": wikiImage("Rene_Guenon_1925.jpg"),
   "accelerationism": wikiImage("Cybernetic_loop.svg"),
   "ccru": wikiImage("Warwick_University_Library_2018.jpg"),
+  "liberalism": wikiImage("John_Locke.jpg"),
+  "anarchism": wikiImage("Pierre-Joseph_Proudhon_(2).jpg"),
+  "deconstruction": wikiImage("Jacques_Derrida_(1930-2004).jpg"),
+  "queer-theory": wikiImage("Judith_butler_in_2012_(8295328593).jpg"),
+  "transhumanism": wikiImage("DNA_double_helix_horizontal.png"),
+  "mysticism": wikiImage("Hildegard.jpg"),
+  "buddhism": wikiImage("Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg"),
 };
 
 export const CONCEPT_IMAGES: Record<string, string> = {
@@ -105,6 +112,15 @@ export const CONCEPT_IMAGES: Record<string, string> = {
   "necropolitics": wikiImage("Achille_Mbembe_par_Claude_Truong-Ngoc_novembre_2015.jpg"),
   "plasticity": wikiImage("Synapse_diag1.svg"),
   "the-event": wikiImage("Alain_Badiou_in_2007.jpg"),
+  "ontology": wikiImage("Aristotle_Altemps_Inv8575.jpg"),
+  "nihilism": wikiImage("Nietzsche187a.jpg"),
+  "hermeneutics": wikiImage("Hans-Georg-Gadamer.jpg"),
+  "idealism": wikiImage("Immanuel_Kant_(painted_portrait).jpg"),
+  "materialism": wikiImage("Hendrick_ter_Brugghen_-_Democritus.jpg"),
+  "dualism": wikiImage("Descartes_mind_and_body.gif"),
+  "determinism": wikiImage("Pierre-Simon_Laplace.jpg"),
+  "absurdism": wikiImage("Albert_Camus,_gagnant_de_prix_Nobel,_portrait_en_buste,_posé_au_bureau,_faisant_face_à_gauche,_cigarette_de_tabagisme.jpg"),
+  "consciousness": wikiImage("Synapse_diag1.svg"),
 };
 
 export const TE_IMAGES: Record<string, string> = {
@@ -120,6 +136,13 @@ export const TE_IMAGES: Record<string, string> = {
   "the-violinist": wikiImage("Violinist_by_Jules_Pascin.jpg"),
   "the-runaway-tram": wikiImage("Tramway_Glasgow_1960s.jpg"),
   "the-lottery": wikiImage("Lottery_balls.jpg"),
+  "brain-in-a-vat": wikiImage("Brain_in_a_vat_(en).png"),
+  "ring-of-gyges": wikiImage("Pieter_Lastman_-_Gyges_King_of_Lydia.jpg"),
+  "heinz-dilemma": wikiImage("Lawrence_Kohlberg.jpg"),
+  "experience-of-color": wikiImage("Color_circle_(hue-sat).png"),
+  "teletransporter": wikiImage("Star_trek_transporter.jpg"),
+  "molyneuxs-question": wikiImage("Cube_and_sphere.png"),
+  "demon-of-eternal-recurrence": wikiImage("Ouroboros.png"),
 };
 
 export function schoolImage(slug: string): string | null {
