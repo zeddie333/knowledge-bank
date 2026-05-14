@@ -1197,6 +1197,193 @@ Whether the hard problem is genuinely intractable, or merely currently intractab
       { title: "Chalmers, The Conscious Mind", cite: "Oxford UP 1996" },
     ],
   },
+
+  // ---- Round-2 additions ----
+  {
+    id: "authenticity",
+    slug: "authenticity",
+    name: "Authenticity",
+    difficulty: "advanced",
+    theme: "ethics",
+    philosopherIds: ["heidegger", "sartre", "kierkegaard"],
+    shortSummary:
+      "Heidegger's term for the mode of Dasein's existence in which it has taken ownership of its own being. Not 'being true to yourself' in the loose contemporary sense — closer to refusing to flee one's finitude into the comfort of doing what one does.",
+    fullBody: `Authenticity (*Eigentlichkeit*, from *eigen*, "one's own") is Heidegger's term in *Being and Time* (1927) for the mode of Dasein's existence in which it has *taken ownership* of its own being. The default mode is *inauthenticity* — Dasein scattered into the anonymous "they" (*das Man*), doing what one does, thinking what one thinks, fleeing the sharp particularity of its own situation into the comfort of average everydayness.
+
+The pivot is being-toward-death. Genuine recognition of one's mortality — not as a distant abstract fact but as the specific limit that gives one's life its specific shape — individualizes Dasein from the "they" and recovers the question of how to live. Authentic Dasein, on Heidegger's account, is not a different kind of person but the same person *resolutely* taking up what their situation actually contains.
+
+The concept survived Heidegger and has had a long and complicated reception. Sartre adapts it for existentialist ethics: authenticity is taking responsibility for the radical freedom we all in fact have, against the temptation of bad faith. Charles Taylor's *The Ethics of Authenticity* (1991) gives a more communitarian reading: authentic selfhood is the recovery of moral sources we share but have forgotten.
+
+The contemporary use of "authentic" — as praise for being unfiltered, transparent, "your real self" — is closer to a marketing concept than to either Heidegger's or Sartre's position. Both philosophers would have found it shallow.`,
+    sources: [
+      { title: "Heidegger, Being and Time", cite: "trans. Macquarrie & Robinson, §§54–60" },
+      { title: "Charles Taylor, The Ethics of Authenticity", cite: "Harvard UP 1991" },
+    ],
+  },
+  {
+    id: "forms-of-life",
+    slug: "forms-of-life",
+    name: "Forms of life",
+    difficulty: "advanced",
+    theme: "language",
+    philosopherIds: ["wittgenstein"],
+    shortSummary:
+      "Wittgenstein's term for the embedded social practices in which language and meaning live. Not a doctrine but a name for what the Philosophical Investigations keeps pointing at: the irreducible fact that meaning is sustained by what we do together.",
+    fullBody: `*Lebensform* — form of life — is one of the most cited and least pinned-down concepts in the *Philosophical Investigations* (1953). Wittgenstein uses it sparingly (perhaps a dozen times across the book) but it does load-bearing work.
+
+The minimal claim: language is not understood by inspecting its internal logical structure (the picture the *Tractatus* had defended). Language is understood by attending to the *language-games* in which words are used, and these language-games are embedded in *forms of life* — the broader patterns of human activity, training, agreement, and shared response that give language its possibility.
+
+"What has to be accepted, the given, is — so one could say — *forms of life*" (PI II.xi). The remark is meant to close, not open, a regress. Justifying linguistic practice by reference to deeper rules would only push the question further; eventually we hit bedrock, and the bedrock is the form of life we share.
+
+The concept has been read both deflationarily (forms of life are just contingent human practices we happen to share) and substantively (forms of life are necessary conditions of mutual intelligibility that the philosophical tradition has obscured). Stanley Cavell, John McDowell, and others have built substantial positions on the latter reading.`,
+    sources: [
+      { title: "Wittgenstein, Philosophical Investigations", cite: "trans. Anscombe, §§19, 23, 241, II.xi" },
+    ],
+  },
+  {
+    id: "family-resemblance",
+    slug: "family-resemblance",
+    name: "Family resemblance",
+    difficulty: "intermediate",
+    theme: "language",
+    philosopherIds: ["wittgenstein"],
+    shortSummary:
+      "Wittgenstein's term for the kind of conceptual unity that has no shared essential feature. Consider the word 'game' — there's no single property all games share; the cases overlap and crisscross like the resemblances of a family.",
+    fullBody: `Wittgenstein introduces *family resemblance* (*Familienähnlichkeit*) at *Philosophical Investigations* §§65–67. The example is the word *game*. Board games, card games, ball games, the games children play in the schoolyard — what do they all have in common? Wittgenstein walks through candidate features (entertainment, competition, rules, skill, luck) and shows that each is shared by some games but not others. There is no single property that all games have.
+
+What unifies the category, instead, is a network of overlapping and crisscrossing similarities — "a complicated network of similarities overlapping and crisscrossing, sometimes overall similarities, sometimes similarities of detail" (PI §66) — like the resemblances among members of a family.
+
+The concept's reach is broader than the example. Wittgenstein uses it to dissolve a tradition (running from Plato through to early-twentieth-century logical analysis) that had assumed every meaningful general term must have a shared essence picked out by a precise definition. Many — most — of our concepts don't work like that. Recognizing this matters for philosophy, where confidently demanded definitions ("what is justice? what is knowledge? what is art?") often produce confused answers because the question presupposes a structure the concept doesn't have.
+
+The concept has been important in cognitive psychology (Eleanor Rosch's prototype theory of categories), philosophy of art (Morris Weitz on the "definition of art" debate), and philosophy of mind.`,
+    sources: [
+      { title: "Wittgenstein, Philosophical Investigations", cite: "§§65–67" },
+    ],
+  },
+  {
+    id: "a-priori",
+    slug: "a-priori",
+    name: "A priori knowledge",
+    difficulty: "intermediate",
+    theme: "epistemology",
+    philosopherIds: ["kant", "kripke", "quine"],
+    shortSummary:
+      "Knowledge that can be acquired and justified independently of experience. Mathematics and logic are the standard examples. Whether there is genuinely any a priori knowledge — and what its nature is — is one of the longest-running debates in epistemology.",
+    fullBody: `A priori knowledge is knowledge whose justification does not depend on particular experiences. The standard examples are mathematical and logical truths: that 7 + 5 = 12, that no proposition can be both true and false in the same sense, that if A implies B and A is true then B is true.
+
+The classical Kantian framework distinguishes two pairs. Knowledge is *a priori* or *a posteriori* (independent of vs. dependent on experience for its justification); propositions are *analytic* or *synthetic* (true by virtue of meanings of terms vs. requiring something more). Kant's famous claim is that there are *synthetic a priori* truths — substantive claims about the world that we can know independently of experience — and that mathematics, the principles of natural science, and some metaphysical claims fall into this category.
+
+Quine's "Two Dogmas of Empiricism" (1951) attacked the analytic/synthetic distinction and, with it, the standard understanding of the a priori. If there is no sharp line between truths by meaning and truths by fact, then there is no clean class of truths immune to revision in light of experience. Quine's holism (the web of belief faces experience as a whole) made the a priori category much harder to defend in the form Kant had given it.
+
+Kripke (in *Naming and Necessity*, 1980) complicated the picture from the other direction. He argued that *necessary a posteriori* truths exist — propositions that are necessarily true but knowable only through experience ("water is H₂O" if it's true is necessarily true, but we needed chemistry to know it). The a priori / a posteriori distinction and the necessary / contingent distinction don't track each other in the way the tradition had assumed.`,
+    sources: [
+      { title: "A Priori Knowledge (SEP)", cite: "Russell, B. SEP entry 'A Priori Justification and Knowledge'", url: "https://plato.stanford.edu/entries/apriori/" },
+    ],
+  },
+  {
+    id: "universals",
+    slug: "universals",
+    name: "Universals",
+    difficulty: "advanced",
+    theme: "metaphysics",
+    philosopherIds: ["plato", "aristotle", "ockham"],
+    shortSummary:
+      "The properties or kinds that multiple particular things can share — redness, humanity, triangularity. Whether universals exist as real entities (realism), only as concepts in minds (conceptualism), or only as names (nominalism) is the oldest open debate in Western metaphysics.",
+    fullBody: `The problem of universals is the question of how we should account for the apparent fact that distinct particular things can share a property or kind. Two red apples are both red. Socrates and Plato are both human. What does it mean to say they share something?
+
+Three classical positions. *Realism* — Plato's, in extreme form — holds that universals exist as real entities, distinct from the particulars that participate in them. The Form of Red is a separate, mind-independent reality; particular red things are red by participating in it. *Conceptualism* — associated with Aristotle, Abelard, and Locke — holds that universals exist only in minds; they are concepts the mind extracts from particulars by abstraction. *Nominalism* — Ockham's classical position — holds that only particulars exist; "redness" is a name, a linguistic device, with no corresponding entity in the world.
+
+The classical debate ran from Plato to Ockham. The contemporary debate (since the early twentieth century, especially through Russell, D.M. Armstrong, David Lewis, Trope theorists) has refined the positions considerably. *Trope theory* introduces a fourth option — there are real instances of redness in particulars (this apple's redness, that apple's redness), but no further universal redness in addition. Armstrong's *immanent realism* keeps real universals but locates them wholly in their particular instances.
+
+The question matters far beyond academic metaphysics. Mathematics (do numbers and sets exist?), philosophy of language (what do general terms refer to?), philosophy of science (do natural kinds exist?), and political philosophy (does "humanity" pick out something real that grounds rights?) all turn on it.`,
+    sources: [
+      { title: "The Medieval Problem of Universals (SEP)", cite: "Klima, G. SEP entry", url: "https://plato.stanford.edu/entries/universals-medieval/" },
+    ],
+  },
+  {
+    id: "truth",
+    slug: "truth",
+    name: "Truth",
+    difficulty: "intermediate",
+    theme: "epistemology",
+    philosopherIds: ["aristotle", "james", "tarski-implicit"],
+    shortSummary:
+      "What is it for a proposition to be true? Correspondence to reality (the classical view), coherence with other beliefs, what works in practice (pragmatism), or — Tarski — just a formal disquotational schema. The major debate of twentieth-century epistemology.",
+    fullBody: `The classical conception of truth is *correspondence*: a proposition is true if it corresponds to the way things are. Aristotle's formulation (*Metaphysics* IV.7) is the canonical ancient statement: "to say of what is that it is, and of what is not that it is not, is true." The correspondence theory has dominated the Western tradition for most of its history.
+
+The alternatives have been substantial. *Coherence* theories hold that a proposition is true if it coheres with the rest of one's beliefs; without a way to step outside our beliefs and check them against unmediated reality, correspondence seems unworkable. Hegel, Bradley, and various idealists defended versions of this.
+
+*Pragmatism* — William James in particular — holds that what we mean by truth is, in the end, what works in the long run of inquiry. Truth is what survives test, refinement, and use. The position invited mockery (truth as "whatever you find useful") and James spent the rest of his life clarifying that the test had to be serious and long-run, not personal convenience.
+
+The twentieth century brought *Tarski's semantic theory* (1933) — a formal disquotational schema: "Snow is white" is true if and only if snow is white. The schema is meant to be philosophically deflationary; it tells us what truth is for any specific sentence without giving a metaphysical account of "truth" as a substantive property.
+
+The current major options include: Davidsonian truth-conditional semantics (truth is a primitive that organizes meaning), various forms of *deflationism* (there is nothing substantial to say about truth beyond the disquotational schema), and *primitivism* (truth is a basic concept, not analyzable in other terms). The correspondence intuition has not died despite repeated obituaries.`,
+    sources: [
+      { title: "The Correspondence Theory of Truth (SEP)", cite: "David, M. SEP entry", url: "https://plato.stanford.edu/entries/truth-correspondence/" },
+    ],
+  },
+  {
+    id: "modality",
+    slug: "modality",
+    name: "Necessity and possibility (modality)",
+    difficulty: "advanced",
+    theme: "metaphysics",
+    philosopherIds: ["leibniz", "kripke", "david-lewis"],
+    shortSummary:
+      "What does it mean for something to be necessarily true rather than merely contingently true? Modal logic gave the formal apparatus; possible-worlds semantics interprets it; whether the possible worlds are real (Lewis) or useful fictions is the live question.",
+    fullBody: `*Modal* claims are claims about necessity, possibility, and contingency: that something *must* be the case, *could* be the case, or *happens to* be the case but didn't have to be. The traditional logical apparatus for distinguishing these — Aristotle's modal syllogistic — was not particularly well-developed.
+
+Leibniz's possible-worlds analysis was the major early-modern advance. A proposition is *necessarily* true if it is true in every possible world; *possibly* true if it is true in at least one; *contingently* true if it is true in the actual world but false in at least one other. The framework gave a clear semantics to modal talk for the first time.
+
+The modern revival came with Saul Kripke's work in the 1960s (*A Completeness Theorem in Modal Logic*, 1959; *Naming and Necessity*, 1970/72). Kripke gave possible-worlds semantics rigorous form for modal logic, defended *rigid designation* (proper names refer to the same entity in every possible world where the entity exists), and introduced the distinction between *necessary a posteriori* and *contingent a priori* truths. Both categories are surprising; both have organized subsequent metaphysics.
+
+The metaphysical question Kripke's framework leaves open is whether possible worlds *exist*. David Lewis (*On the Plurality of Worlds*, 1986) defended *modal realism*: all possible worlds exist as real, concrete, mutually inaccessible universes, each as real as our own. Almost no other major analytic philosopher agreed; the cost in ontological extravagance was widely thought to outweigh the explanatory benefits. The alternatives — *ersatz* possible worlds (worlds as abstract entities), modal *fictionalism*, or modal *primitivism* — remain contested.`,
+    sources: [
+      { title: "Modal Logic (SEP)", cite: "Garson, J. SEP entry", url: "https://plato.stanford.edu/entries/logic-modal/" },
+    ],
+  },
+  {
+    id: "beauty",
+    slug: "beauty",
+    name: "Beauty",
+    difficulty: "intermediate",
+    theme: "aesthetics",
+    philosopherIds: ["plato", "kant"],
+    shortSummary:
+      "The central concept of aesthetics — and one of the most argued-over in philosophy. Is beauty an objective property of things, a subjective response, or a culturally constituted judgment that presents itself to us as more than that?",
+    fullBody: `The classical Western conception of beauty — Plato's, articulated in the *Symposium* and the *Phaedrus* — treats beauty as an objective property of things, with the Form of Beauty as its ultimate source. The beautiful body, the beautiful proposition, the beautiful action all participate in the same Form. Beauty is what we love when we love truly.
+
+Kant's *Critique of Judgment* (1790) gave the modern philosophical theory of beauty its founding form. A judgment of beauty (a *pure judgment of taste*) is subjective in that it is grounded in the subject's pleasure rather than in any concept of the object, but is universal in its claim — when I say "this is beautiful," I am claiming that every other rational agent ought to agree with me, even though I cannot prove it. Beauty is, for Kant, a kind of subjective universality.
+
+Hume's "Of the Standard of Taste" (1757) defended a more empirical position: beauty is in the eye of the beholder, but not all beholders are equal; the *true judges* are those whose practice has refined their sensibility, and their judgments converge enough to make a standard of taste possible.
+
+Twentieth-century philosophy of art largely shifted attention away from beauty as the central aesthetic concept. The interesting twentieth-century artwork is often unbeautiful, even ugly, in ways that the classical concept can't easily accommodate; critics like Theodor Adorno argued that "beauty" had become a category serving comforting kitsch. But the concept has been quietly returning — Elaine Scarry's *On Beauty and Being Just* (1999), Alexander Nehamas' *Only a Promise of Happiness* (2007), and others have made the case that beauty deserves more philosophical attention than the mid-twentieth century gave it.`,
+    sources: [
+      { title: "Kant's Aesthetics (SEP)", cite: "Ginsborg, H. SEP entry 'Kant's Aesthetics and Teleology'", url: "https://plato.stanford.edu/entries/kant-aesthetics/" },
+    ],
+  },
+  {
+    id: "i-thou",
+    slug: "i-thou",
+    name: "I and Thou",
+    difficulty: "intermediate",
+    theme: "ethics",
+    philosopherIds: ["buber", "levinas"],
+    shortSummary:
+      "Buber's distinction between two basic modes of relating to anything. In the I-It mode, the other is an object — classified, used, theorized about. In the I-Thou mode, the other is met as a whole presence I am fully present to. Both are needed; modern life has structurally lost the second.",
+    fullBody: `Martin Buber's *Ich und Du* (1923) introduced the distinction between *I-It* and *I-Thou* as the two basic modes of human relation to anything — another person, a tree, God, a piece of music.
+
+In the *I-It* mode, the other is encountered as an object: classified, useful, predictable, controllable. This mode is necessary; without it survival, science, ordinary practical action would be impossible. The *I* of *I-It* is a stable, bounded self that knows itself through its handling of what it confronts.
+
+In the *I-Thou* mode, the other is met without those mediating categories — as a whole presence, in a meeting that the *I* itself is fully present to. The *I* of *I-Thou* is not a bounded knower facing an object; it is constituted in the meeting. Buber's repeated point is that *I-Thou* relations have no content that can be extracted and described — describing the relation already steps outside it into the *I-It* mode.
+
+Modernity, on Buber's diagnosis, has structurally over-developed the *I-It* mode at the cost of the *I-Thou*. Industrial production, bureaucratic administration, scientific abstraction, and consumerist exchange all train the human person to treat everything (including other persons) as material for handling. The recovery of *I-Thou* — particularly in the encounter with another person — is, for Buber, the deepest spiritual and social task of the present age.
+
+The framework has been important in dialogical philosophy, in pastoral and educational psychology (Carl Rogers drew on Buber heavily), in mid-twentieth-century theology, and in contemporary care ethics. Levinas's ethics of the face is recognizably in dialogue with Buber, though Levinas pushes the argument in different directions.`,
+    sources: [
+      { title: "Martin Buber, I and Thou", cite: "trans. Walter Kaufmann, Touchstone 1970 (orig. 1923)" },
+    ],
+  },
 ];
 
 export function getConcept(slug: string): Concept | undefined {

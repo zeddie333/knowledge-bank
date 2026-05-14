@@ -395,6 +395,136 @@ export const THOUGHT_EXPERIMENTS: ThoughtExperiment[] = [
     relatedPhilosopherIds: ["nietzsche"],
     relatedConceptIds: ["eternal-recurrence", "amor-fati"],
   }),
+
+  te({
+    id: "sorites",
+    slug: "sorites-paradox",
+    title: "The Sorites Paradox",
+    setup:
+      "A heap of sand on the ground. Remove one grain — still a heap. Remove another — still a heap. Continue grain by grain. At some point, by hypothesis, you have one grain left, which is not a heap. Where did the heap stop being a heap?",
+    question: "What's the right response to the apparent contradiction?",
+    options: [
+      { id: "epistemic", label: "There's a sharp cutoff; we just don't know where." },
+      { id: "vagueness", label: "Heap-ness is genuinely vague; the question of the exact cutoff is malformed." },
+      { id: "context", label: "What counts as a heap depends on context; no single line exists." },
+    ],
+    reveal: [
+      { position: "The paradox is from Eubulides (4th c. BCE), a member of the Megarian school and a contemporary critic of Aristotle. Versions of it have been around as long as Western philosophy." },
+      { position: "Epistemicism (Williamson) holds there is a sharp cutoff — at, say, exactly N grains the heap becomes a non-heap — but we cannot know where it is. This preserves classical logic at the cost of an apparently unknowable fact." },
+      { position: "Many-valued and fuzzy logics treat vague predicates as having truth values between 0 and 1; '5 grains is a heap' might have truth value 0.04. Critics argue this just relocates the sharp cutoff." },
+      { position: "Supervaluationism: 'this is a heap' is super-true if it's true on every legitimate way of making the predicate precise, super-false if it's false on every such way, and indeterminate in the borderline range. The logic stays classical at the cost of a new metavalue." },
+      { position: "The paradox matters far beyond word games. Philosophical anthropology (when does a fetus become a person?), criminal law (when is someone drunk enough to be impaired?), and contemporary debates about diagnostic categories all hit Sorites-shaped problems." },
+    ],
+    relatedPhilosopherIds: [],
+    relatedConceptIds: [],
+  }),
+  te({
+    id: "newcomb",
+    slug: "newcombs-problem",
+    title: "Newcomb's Problem",
+    setup:
+      "A reliable predictor (perhaps a superintelligent AI) has placed two boxes in front of you. Box A is transparent and contains $1,000. Box B is opaque. The predictor has already predicted your choice. If they predicted you would take only Box B, they put $1,000,000 in it. If they predicted you would take both boxes, they put nothing in B. You know all this. The boxes are sealed. You choose now: take only Box B, or take both?",
+    question: "What do you do?",
+    options: [
+      { id: "one-box", label: "Take only Box B. The predictor's track record is what matters." },
+      { id: "two-box", label: "Take both. Whatever's in B is already there; the extra $1,000 is free." },
+      { id: "depends", label: "It depends on how accurate the predictor really is, and on what 'accurate' means." },
+    ],
+    reveal: [
+      { position: "The case was introduced by William Newcomb and popularized by Robert Nozick in 1969. It pits two principles of rational decision-making against each other." },
+      { position: "Evidential decision theory: the expected utility of an act is calculated using the conditional probability of outcomes given the act. Taking only Box B has very high expected utility because the act is strong evidence that the predictor predicted you'd one-box, meaning Box B has the million." },
+      { position: "Causal decision theory: the expected utility of an act is calculated using the causal effects of the act. Your choice now cannot causally affect what's already in Box B. Two-boxing causally dominates: whatever's in B, you get $1,000 more by taking both." },
+      { position: "The disagreement between these two frameworks — both serious candidates for what 'rational' decision-making is — has produced an enormous literature. Newcomb's problem is the test case." },
+      { position: "More recent variants (Parfit's hitchhiker, the Smoking Lesion problem, transparent Newcomb cases) and the development of functional/timeless decision theories have refined the positions further. The problem has practical relevance for the design of artificial agents whose decisions might be predicted by other agents." },
+    ],
+    relatedPhilosopherIds: ["nozick"],
+    relatedConceptIds: ["free-will-determinism"],
+  }),
+  te({
+    id: "drowning-child",
+    slug: "the-drowning-child",
+    title: "The Drowning Child",
+    setup:
+      "You are walking past a shallow pond on your way to work. You notice a small child face-down in the pond, drowning. You can easily wade in and pull her out; the only cost would be that your shoes will be ruined and your suit will be muddy, and you will be late for an unimportant meeting. There is no one else around.",
+    question: "Are you morally required to save the child?",
+    options: [
+      { id: "obviously", label: "Obviously. The cost is trivial, the benefit enormous." },
+      { id: "no", label: "Not in the strict sense. It would be admirable to save her, but not required." },
+      { id: "complicated", label: "Yes — and the implications of why are uncomfortable." },
+    ],
+    reveal: [
+      { position: "Peter Singer introduced this case in 'Famine, Affluence, and Morality' (1972). The intuition almost everyone shares: of course you have to wade in. The cost is trivial; the benefit is a child's life." },
+      { position: "Singer's argument: there is no morally relevant difference between this case and our actual relation to children dying of preventable causes far away. The cost of a donation that would save a distant child's life is comparable to the cost of muddy shoes. If the pond case obligates you, the distance case does too." },
+      { position: "The argument has resisted decades of attempted refutation. The standard moves — distance dilutes obligation, individual donations don't reliably reach the intended beneficiaries, you can't be obligated to give endlessly — turn out to be harder to defend than they look once you start examining them." },
+      { position: "Singer's conclusion: the affluent are morally required to give substantially more to effective global poverty reduction than we currently do, and 'charity' as a category that floats above strict obligation is mostly a self-serving fiction. The effective altruism movement is downstream of this argument." },
+      { position: "Critics (Bernard Williams, Susan Wolf) argue that the argument's demandingness is itself evidence it has gone wrong — a moral theory that requires constant self-sacrifice misses what makes individual lives worth living. The dispute is real and unresolved." },
+    ],
+    relatedPhilosopherIds: ["singer", "williams"],
+    relatedConceptIds: ["natural-law"],
+  }),
+  te({
+    id: "lottery-paradox",
+    slug: "the-lottery-paradox",
+    title: "The Lottery Paradox",
+    setup:
+      "A fair lottery has been held with one million tickets. Exactly one will be drawn as the winner. You hold no tickets. For each ticket separately, you are clearly justified in believing it will lose — the odds of any specific ticket winning are 1 in 1,000,000.",
+    question: "Are you justified in believing 'no ticket will win'?",
+    options: [
+      { id: "yes", label: "Yes — I have strong evidence against each individual ticket." },
+      { id: "no", label: "No — I know with certainty that some ticket will win." },
+      { id: "knowledge-fails", label: "The case shows that we should distinguish justified belief from knowledge." },
+    ],
+    reveal: [
+      { position: "Henry Kyburg introduced the paradox in 1961. The structure: I have very high-probability evidence for each separate claim ('ticket #1 will lose,' 'ticket #2 will lose,' etc.), and I know they cannot all be true together." },
+      { position: "If justification is closed under conjunction — if I am justified in believing P and justified in believing Q, then I am justified in believing P-and-Q — the paradox produces a contradiction: I am justified in believing that no ticket wins, but I know one does." },
+      { position: "Several major responses. *Reject closure*: justification doesn't transmit across conjunction in the way the principle assumes. *Threshold accounts*: there is some probability threshold below which I should not believe a proposition, and individual lottery propositions fall below that threshold even though their evidence is high. *Knowledge accounts*: even if I have justified belief about each ticket, I do not have *knowledge* of any of them, and the principles that fail for justified belief still hold for knowledge." },
+      { position: "The paradox has been one of the engines of contemporary epistemology, particularly in the development of safety-based and sensitivity-based theories of knowledge, contextualist accounts of knowledge claims, and recent work on the relation between probability and rational belief." },
+    ],
+    relatedPhilosopherIds: [],
+    relatedConceptIds: [],
+  }),
+  te({
+    id: "sleeping-beauty",
+    slug: "sleeping-beauty-problem",
+    title: "The Sleeping Beauty Problem",
+    setup:
+      "Sleeping Beauty volunteers for an experiment. On Sunday evening she goes to sleep. A fair coin will be flipped. If heads, she is awakened once (on Monday) and the experiment ends. If tails, she is awakened twice (Monday and Tuesday) — and after the Monday awakening her memory is wiped so that on Tuesday she has no memory of having been woken. When she wakes up, she is asked: 'What credence do you assign to the coin having landed heads?'",
+    question: "What's the right answer?",
+    options: [
+      { id: "half", label: "1/2 — the coin was fair, and waking up gives no new information about it." },
+      { id: "third", label: "1/3 — among the possible awakenings, one out of three is the heads-Monday awakening." },
+      { id: "neither", label: "Neither — the question is malformed; credence about temporal location can't be calculated this way." },
+    ],
+    reveal: [
+      { position: "The problem was introduced by Adam Elga in 2000 and has been intensely debated since. The two main positions — 'halfers' and 'thirders' — both have prominent defenders." },
+      { position: "Halfers reason: Beauty knew the coin's probability was 1/2 before the experiment. Waking up tells her nothing she didn't already know (she knew she'd be awakened in any case). So her credence should stay at 1/2." },
+      { position: "Thirders reason: if the experiment were repeated many times, two-thirds of Beauty's awakenings would be tails-awakenings. Self-locating credence — credence about which of several possible awakenings she's currently in — should track that ratio. 1/3." },
+      { position: "The disagreement bears on contemporary debates about anthropic reasoning (the Doomsday argument, the Simulation argument), self-locating belief in general (including in the philosophy of physics and cosmology), and the structure of conditional probability across temporal stages of an agent." },
+    ],
+    relatedPhilosopherIds: [],
+    relatedConceptIds: [],
+  }),
+  te({
+    id: "last-man",
+    slug: "the-last-man",
+    title: "The Last Man on Earth",
+    setup:
+      "Suppose, by some catastrophe, you are the last conscious being on Earth — the last human, the last animal capable of experiencing anything. There are no more sentient beings; there will not be any again. Before you fall asleep for the last time, you walk over to a beautiful, ancient tree and, without good reason, set fire to it.",
+    question: "Have you done something wrong?",
+    options: [
+      { id: "yes", label: "Yes — the tree had value independent of any conscious experience of it." },
+      { id: "no", label: "No — without any sentient being to be harmed or to value the tree, no moral wrong occurs." },
+      { id: "complicated", label: "Something has been lost, but I'm not sure 'wrong' is the right word." },
+    ],
+    reveal: [
+      { position: "Richard Sylvan (then Richard Routley) introduced this case in 'Is There a Need for a New, an Environmental Ethic?' (1973). It was meant to test whether our actual moral intuitions extend to attribute value to the natural world independent of human or sentient interests." },
+      { position: "Many readers find the burning wrong even by stipulation. Standard anthropocentric ethics — utilitarianism, Kantianism, even most virtue ethics — has trouble accounting for the intuition. There is no one to be harmed; the agent's character matters little if no one is left to be affected by it; the universalizability test doesn't bite in a depopulated world." },
+      { position: "The argument is one of the founding moves of environmental ethics as a field. Holmes Rolston III, Arne Naess, and others have developed positions on which the natural world has *intrinsic value* — value not reducible to its instrumental relation to sentient beings — and this case is a touchstone." },
+      { position: "Critics argue the intuition is a residue of anthropocentric thinking projected onto a depopulated world; properly extinguish the anthropocentric residue and the intuition goes with it. The disagreement has substantive ethical and policy stakes." },
+    ],
+    relatedPhilosopherIds: [],
+    relatedConceptIds: [],
+  }),
 ];
 
 export function getThoughtExperiment(slug: string): ThoughtExperiment | undefined {

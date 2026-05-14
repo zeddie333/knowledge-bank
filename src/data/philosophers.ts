@@ -11,6 +11,7 @@ import { CONTEMPORARY } from "./philosophers/contemporary";
 import { EXTRAS } from "./philosophers/extras";
 import { PERENNIALIST } from "./philosophers/perennialist";
 import { ACCELERATIONIST } from "./philosophers/accelerationist";
+import { EXPANSION_V2 } from "./philosophers/expansion-v2";
 
 // Editorial voice: confident, a little literary, never reverent for its own sake.
 // Every concrete claim is sourced. If a passage couldn't be traced, it's not here.
@@ -30,6 +31,7 @@ export const PHILOSOPHERS: Philosopher[] = [
   ...EXTRAS,
   ...PERENNIALIST,
   ...ACCELERATIONIST,
+  ...EXPANSION_V2,
 ];
 
 export function getPhilosopher(slug: string): Philosopher | undefined {

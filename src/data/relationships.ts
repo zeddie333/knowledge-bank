@@ -268,6 +268,86 @@ export const RELATIONSHIPS: Relationship[] = [
   { id: "r-hegel-zizek", fromType: "philosopher", fromId: "hegel", toType: "philosopher", toId: "zizek", relation: "influenced" },
   { id: "r-lacan-zizek", fromType: "philosopher", fromId: "lacan", toType: "philosopher", toId: "zizek", relation: "influenced" },
   { id: "c-badiou-event", fromType: "philosopher", fromId: "badiou", toType: "concept", toId: "the-event", relation: "exemplifies" },
+
+  // ---- Round-2 additions ----
+  // Ancient extras
+  { id: "r-zeno-cit-chrysippus", fromType: "philosopher", fromId: "zeno-of-citium", toType: "philosopher", toId: "chrysippus", relation: "influenced" },
+  { id: "r-chrysippus-stoic", fromType: "philosopher", fromId: "chrysippus", toType: "school", toId: "stoicism", relation: "belongs_to" },
+  { id: "r-pyrrho-pyrrhonism", fromType: "philosopher", fromId: "pyrrho", toType: "school", toId: "pyrrhonism", relation: "belongs_to" },
+  { id: "r-sextus-pyrrhonism", fromType: "philosopher", fromId: "sextus-empiricus", toType: "school", toId: "pyrrhonism", relation: "belongs_to" },
+  { id: "r-pyrrho-sextus", fromType: "philosopher", fromId: "pyrrho", toType: "philosopher", toId: "sextus-empiricus", relation: "influenced" },
+  { id: "r-sextus-hume", fromType: "philosopher", fromId: "sextus-empiricus", toType: "philosopher", toId: "hume", relation: "influenced" },
+  { id: "r-hypatia-neo", fromType: "philosopher", fromId: "hypatia", toType: "school", toId: "neoplatonism", relation: "belongs_to" },
+
+  // Medieval extras
+  { id: "r-eriugena-eckhart", fromType: "philosopher", fromId: "eriugena", toType: "philosopher", toId: "eckhart", relation: "influenced" },
+  { id: "r-eckhart-mysticism", fromType: "philosopher", fromId: "eckhart", toType: "school", toId: "mysticism", relation: "belongs_to" },
+  { id: "r-hildegard-mysticism", fromType: "philosopher", fromId: "hildegard", toType: "school", toId: "mysticism", relation: "belongs_to" },
+  { id: "r-suhrawardi-mulla-sadra", fromType: "philosopher", fromId: "suhrawardi", toType: "philosopher", toId: "mulla-sadra", relation: "influenced" },
+  { id: "r-avicenna-suhrawardi", fromType: "philosopher", fromId: "avicenna", toType: "philosopher", toId: "suhrawardi", relation: "influenced" },
+  { id: "r-avicenna-mulla-sadra", fromType: "philosopher", fromId: "avicenna", toType: "philosopher", toId: "mulla-sadra", relation: "influenced" },
+  { id: "r-ibn-arabi-mulla-sadra", fromType: "philosopher", fromId: "ibn-arabi", toType: "philosopher", toId: "mulla-sadra", relation: "influenced" },
+
+  // Indian / Asian extras
+  { id: "r-dignaga-yogacara", fromType: "philosopher", fromId: "dignaga", toType: "school", toId: "yogacara", relation: "belongs_to" },
+  { id: "r-vasubandhu-dignaga", fromType: "philosopher", fromId: "vasubandhu", toType: "philosopher", toId: "dignaga", relation: "influenced" },
+
+  // Early modern / Renaissance
+  { id: "r-bruno-spinoza", fromType: "philosopher", fromId: "bruno", toType: "philosopher", toId: "spinoza", relation: "influenced" },
+  { id: "r-conway-leibniz", fromType: "philosopher", fromId: "conway", toType: "philosopher", toId: "leibniz", relation: "influenced" },
+  { id: "r-pizan-wollstonecraft", fromType: "philosopher", fromId: "pizan", toType: "philosopher", toId: "wollstonecraft", relation: "influenced" },
+
+  // Process philosophy
+  { id: "r-whitehead-process", fromType: "philosopher", fromId: "whitehead", toType: "school", toId: "process-philosophy", relation: "belongs_to" },
+  { id: "r-bergson-whitehead", fromType: "philosopher", fromId: "bergson", toType: "philosopher", toId: "whitehead", relation: "influenced" },
+  { id: "r-russell-whitehead", fromType: "philosopher", fromId: "russell", toType: "philosopher", toId: "whitehead", relation: "related_to", notes: "Co-authored Principia Mathematica." },
+  { id: "r-russell-logatomism", fromType: "philosopher", fromId: "russell", toType: "school", toId: "logical-atomism", relation: "belongs_to" },
+  { id: "r-wittgenstein-logatomism", fromType: "philosopher", fromId: "wittgenstein", toType: "school", toId: "logical-atomism", relation: "belongs_to" },
+
+  // Levinas / Buber
+  { id: "r-husserl-levinas", fromType: "philosopher", fromId: "husserl", toType: "philosopher", toId: "levinas", relation: "influenced" },
+  { id: "r-heidegger-levinas", fromType: "philosopher", fromId: "heidegger", toType: "philosopher", toId: "levinas", relation: "influenced" },
+  { id: "r-heidegger-levinas-crit", fromType: "philosopher", fromId: "levinas", toType: "philosopher", toId: "heidegger", relation: "critiqued" },
+  { id: "r-levinas-derrida", fromType: "philosopher", fromId: "levinas", toType: "philosopher", toId: "derrida", relation: "influenced" },
+  { id: "r-levinas-phen", fromType: "philosopher", fromId: "levinas", toType: "school", toId: "phenomenology", relation: "belongs_to" },
+  { id: "r-buber-levinas", fromType: "philosopher", fromId: "buber", toType: "philosopher", toId: "levinas", relation: "influenced" },
+  { id: "c-buber-i-thou", fromType: "philosopher", fromId: "buber", toType: "concept", toId: "i-thou", relation: "exemplifies" },
+
+  // Althusser
+  { id: "r-marx-althusser", fromType: "philosopher", fromId: "marx", toType: "philosopher", toId: "althusser", relation: "influenced" },
+  { id: "r-althusser-marxism", fromType: "philosopher", fromId: "althusser", toType: "school", toId: "marxism", relation: "belongs_to" },
+  { id: "r-althusser-foucault", fromType: "philosopher", fromId: "althusser", toType: "philosopher", toId: "foucault", relation: "influenced" },
+  { id: "r-althusser-ranciere", fromType: "philosopher", fromId: "althusser", toType: "philosopher", toId: "ranciere", relation: "influenced" },
+
+  // Contemporary analytic
+  { id: "r-chalmers-analytic", fromType: "philosopher", fromId: "chalmers", toType: "school", toId: "analytic-philosophy", relation: "belongs_to" },
+  { id: "r-nagel-analytic", fromType: "philosopher", fromId: "nagel", toType: "school", toId: "analytic-philosophy", relation: "belongs_to" },
+  { id: "r-david-lewis-analytic", fromType: "philosopher", fromId: "david-lewis", toType: "school", toId: "analytic-philosophy", relation: "belongs_to" },
+  { id: "r-korsgaard-analytic", fromType: "philosopher", fromId: "korsgaard", toType: "school", toId: "analytic-philosophy", relation: "belongs_to" },
+  { id: "r-kant-korsgaard", fromType: "philosopher", fromId: "kant", toType: "philosopher", toId: "korsgaard", relation: "influenced" },
+  { id: "r-nagel-chalmers", fromType: "philosopher", fromId: "nagel", toType: "philosopher", toId: "chalmers", relation: "influenced" },
+  { id: "c-chalmers-consciousness", fromType: "philosopher", fromId: "chalmers", toType: "concept", toId: "consciousness", relation: "exemplifies" },
+  { id: "c-nagel-consciousness", fromType: "philosopher", fromId: "nagel", toType: "concept", toId: "consciousness", relation: "exemplifies" },
+  { id: "c-david-lewis-modality", fromType: "philosopher", fromId: "david-lewis", toType: "concept", toId: "modality", relation: "exemplifies" },
+  { id: "c-kripke-modality", fromType: "philosopher", fromId: "kripke", toType: "concept", toId: "modality", relation: "exemplifies" },
+
+  // Dussel / liberation
+  { id: "r-dussel-liberation", fromType: "philosopher", fromId: "dussel", toType: "school", toId: "liberation-philosophy", relation: "belongs_to" },
+  { id: "r-dussel-postcolonial", fromType: "philosopher", fromId: "dussel", toType: "school", toId: "postcolonial-theory", relation: "related_to" },
+  { id: "r-levinas-dussel", fromType: "philosopher", fromId: "levinas", toType: "philosopher", toId: "dussel", relation: "influenced" },
+
+  // Concept attachments
+  { id: "c-heidegger-authenticity", fromType: "philosopher", fromId: "heidegger", toType: "concept", toId: "authenticity", relation: "exemplifies" },
+  { id: "c-sartre-authenticity", fromType: "philosopher", fromId: "sartre", toType: "concept", toId: "authenticity", relation: "exemplifies" },
+  { id: "c-wittgenstein-forms-of-life", fromType: "philosopher", fromId: "wittgenstein", toType: "concept", toId: "forms-of-life", relation: "exemplifies" },
+  { id: "c-wittgenstein-family-resemblance", fromType: "philosopher", fromId: "wittgenstein", toType: "concept", toId: "family-resemblance", relation: "exemplifies" },
+  { id: "c-kant-a-priori", fromType: "philosopher", fromId: "kant", toType: "concept", toId: "a-priori", relation: "exemplifies" },
+  { id: "c-plato-universals", fromType: "philosopher", fromId: "plato", toType: "concept", toId: "universals", relation: "exemplifies" },
+  { id: "c-aristotle-truth", fromType: "philosopher", fromId: "aristotle", toType: "concept", toId: "truth", relation: "exemplifies" },
+  { id: "c-james-truth", fromType: "philosopher", fromId: "james", toType: "concept", toId: "truth", relation: "exemplifies" },
+  { id: "c-leibniz-modality", fromType: "philosopher", fromId: "leibniz", toType: "concept", toId: "modality", relation: "exemplifies" },
+  { id: "c-plato-beauty", fromType: "philosopher", fromId: "plato", toType: "concept", toId: "beauty", relation: "exemplifies" },
+  { id: "c-kant-beauty", fromType: "philosopher", fromId: "kant", toType: "concept", toId: "beauty", relation: "exemplifies" },
 ];
 
 export function relatedTo(type: string, id: string): Relationship[] {

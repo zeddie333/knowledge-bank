@@ -926,6 +926,110 @@ The philosophical questions mysticism raises are sharp. What is the epistemic st
 The Perennialist tradition (Guénon, Schuon, Coomaraswamy, Lings, Nasr) reads the cross-traditional structure as evidence of a single underlying metaphysical reality that all the traditions are approaching from different cultural starting points. Critics argue this overstates the structural similarity and projects a specific (often Advaitin or Sufi) metaphysics onto traditions whose own self-understanding differs.`,
   },
   {
+    id: "process-philosophy",
+    slug: "process-philosophy",
+    name: "Process Philosophy",
+    eraStart: 1900,
+    eraEnd: null,
+    region: "european",
+    philosopherIds: ["whitehead"],
+    shortSummary:
+      "The metaphysical tradition — Bergson, Whitehead, Hartshorne, the recent revival in Deleuze and Stengers — that treats becoming as more fundamental than being. The basic units of reality are events of change, not enduring substances.",
+    fullBody: `Process philosophy is the broad twentieth-century tradition that holds *becoming* to be more fundamental than *being*. The basic units of reality, on this view, are not enduring substances (things that persist through time while their accidents change) but events of becoming — *actual occasions*, in Whitehead's vocabulary — each of which arises out of prior events and contributes to the conditions for subsequent ones.
+
+The major figures: Henri Bergson (whose *durée* is the proximate ancestor); Alfred North Whitehead, whose *Process and Reality* (1929) is the canonical systematic statement; Charles Hartshorne, who developed the theological implications across decades of work; in the contemporary scene, Isabelle Stengers and the Deleuzian tradition have recovered Whitehead for the post-structuralist generation.
+
+The position has had a smaller mainstream presence than analytic or phenomenological philosophy but a distinctive long arc. Process theology (Hartshorne, Cobb) gave Christian theology a way to take time and change seriously without sacrificing divine reality. Contemporary work on emergence, on philosophy of biology, and on ecological metaphysics has drawn on Whiteheadian resources. The tradition's central wager — that the substance metaphysics inherited from Aristotle has been a long detour, and that thinking through events is what philosophy should have been doing all along — remains a live option.`,
+  },
+  {
+    id: "pyrrhonism",
+    slug: "pyrrhonism",
+    name: "Pyrrhonism",
+    eraStart: -300,
+    eraEnd: 300,
+    region: "greek",
+    philosopherIds: ["pyrrho", "sextus-empiricus"],
+    shortSummary:
+      "The most radical school of ancient skepticism. Founded by Pyrrho, systematized by Aenesidemus, and given its definitive form in Sextus Empiricus' Outlines — the source nearly all subsequent skepticism draws on.",
+    fullBody: `Pyrrhonism is the more radical of the two ancient skeptical schools (the other, Academic Skepticism, took over Plato's Academy from the mid-third century BCE). Pyrrho left no writings; the school survives to us through Sextus Empiricus' three works in the second century CE.
+
+Three claims structure the position. *Isostheneia*: for any proposition, opposing arguments can be marshaled with equal force. *Epoché*: the honest response is to suspend judgment. *Ataraxia*: tranquility follows, not because suspension produces peace by some psychological mechanism, but because the strain of trying to settle what cannot be settled is itself the source of unrest.
+
+Sextus distinguishes Pyrrhonism sharply from Academic Skepticism. The Academic, he says, *asserts* that nothing can be known — a dogmatic claim about the impossibility of knowledge. The Pyrrhonist makes no such assertion; she simply finds, on case-by-case examination, that confidence is unjustified, and reports the suspension as a practical attitude rather than a doctrine.
+
+The rediscovery of Sextus by Renaissance humanists — Henri Estienne published the Latin in 1562 — was one of the more consequential events in the prehistory of modern philosophy. Montaigne, Descartes (negatively), Hume, and Bayle all read Sextus carefully. Contemporary epistemology has rediscovered Pyrrhonism as a serious option worth taking seriously rather than dismissing as paradox.`,
+  },
+  {
+    id: "jainism",
+    slug: "jainism",
+    name: "Jainism",
+    eraStart: -600,
+    eraEnd: null,
+    region: "south-asian",
+    philosopherIds: [],
+    shortSummary:
+      "Jainism is among the oldest continuous philosophical traditions in the world. Its commitment to ahiṃsā (non-harming) is unmatched in any other tradition for its rigor; its metaphysics — anekāntavāda, the many-sidedness of reality — anticipates philosophical positions only recently rediscovered in the analytic tradition.",
+    fullBody: `Jainism's recorded history begins with Mahāvīra (599–527 BCE) — though Jains hold the tradition to be far older, descending through twenty-four prior *tīrthaṅkaras*. Across two and a half millennia the tradition has produced a continuous philosophical and ethical project distinct from both Hindu and Buddhist alternatives.
+
+The central ethical commitment is *ahiṃsā* — non-harming, in a stronger sense than any other tradition formalizes. The Jain monk strains drinking water through cloth, sweeps the path before stepping, and refuses several forms of food on the grounds that gathering them would harm the producing organism. The argument is not utilitarian but metaphysical: every sentient being carries a soul whose karma is affected by the harms it receives, and one's own karma is affected by the harms one inflicts.
+
+The metaphysical doctrine is *anekāntavāda* — the many-sidedness of reality. No single description of any complex object can be complete; truth is irreducibly perspectival, and intellectual humility about this is built into the system. The technical apparatus — *syādvāda* (the doctrine of seven-valued logic for partial truths) and *nayavāda* (the systematic enumeration of standpoints) — is among the most sophisticated in any premodern logic tradition.
+
+The two main monastic branches (Digambara and Śvetāmbara) split in late antiquity over questions of monastic practice; both continue today. The philosophical figures who shaped the tradition include Umāsvāti (c. 2nd c., the *Tattvārtha Sūtra*), Kundakunda (c. 2nd c., on the soul), Haribhadra (8th c.), and Hemacandra (12th c.).`,
+  },
+  {
+    id: "critical-race-theory",
+    slug: "critical-race-theory",
+    name: "Critical Race Theory",
+    eraStart: 1989,
+    eraEnd: null,
+    region: "american",
+    philosopherIds: [],
+    shortSummary:
+      "The legal-academic tradition — Derrick Bell, Kimberlé Crenshaw, Patricia Williams, Richard Delgado, Charles Mills — that examines how race is constructed and reproduced by ostensibly neutral legal frameworks. Now widely misappropriated; the actual scholarly tradition is more careful than the political controversy suggests.",
+    fullBody: `Critical Race Theory (CRT) emerged in the late 1970s and 80s in American legal scholarship as a response to limits the early figures saw in both liberal civil-rights legalism and Marxist critique. The founding figures — Derrick Bell at Harvard, then Kimberlé Crenshaw, Mari Matsuda, Patricia Williams, Richard Delgado, Charles Lawrence, and others — produced a distinctive body of legal and philosophical work in conversation with critical legal studies, Black feminist thought, and postcolonial theory.
+
+The shared commitments include: race is not a natural category but a social and legal construction with continuing material effects; that construction has been produced and reproduced by ostensibly race-neutral legal and institutional frameworks; *interest convergence* (Bell) — substantial civil rights gains have historically occurred when they happened to align with majority interests; the *colorblind* posture in law often produces continuity of unequal effects rather than equality of treatment; and the perspective of those subjected to racial subordination has distinctive standing in identifying these patterns.
+
+Kimberlé Crenshaw's 1989 paper "Demarginalizing the Intersection of Race and Sex" introduced the concept of *intersectionality* — the analysis of how race, gender, class, and other axes of subordination overlap in ways that single-axis frameworks miss. The concept has since traveled far beyond the CRT context.
+
+The recent political controversy about "CRT" has tended to be about a much broader set of curricula and frameworks than the actual scholarly tradition; whatever one's views on the politics, the philosophical work the original figures produced remains a serious resource.`,
+  },
+  {
+    id: "liberation-philosophy",
+    slug: "liberation-philosophy",
+    name: "Philosophy of Liberation",
+    eraStart: 1971,
+    eraEnd: null,
+    region: "american",
+    philosopherIds: ["dussel"],
+    shortSummary:
+      "Filosofía de la Liberación — the Latin American philosophical movement, founded around Enrique Dussel and the Argentine philosophers of the early 1970s, that begins philosophy from the perspective of the excluded and the colonized rather than the European universal subject.",
+    fullBody: `The Latin American Philosophy of Liberation crystallized in the early 1970s, particularly at the 1971 conference in Salta, Argentina, around a group of philosophers including Enrique Dussel, Juan Carlos Scannone, Osvaldo Ardiles, and Mario Casalla. The movement was profoundly affected by the political conditions of the period: the wave of military dictatorships, the dependency-theory analysis of Latin American underdevelopment, the influence of Vatican II and liberation theology, and the influence of Levinas (whose ethics of the Other Dussel adapted as the framework's philosophical foundation).
+
+The central commitment: the standard history of European philosophy has been written from the perspective of the European subject as universal, treating the rest of the world as the "outside" that European philosophy contemplates and develops categories for. The Philosophy of Liberation begins from the perspective of the *excluded other* — the colonized, the impoverished, the indigenous, the racially and economically subordinated — and asks what philosophy looks like when reconstructed from that starting point.
+
+The relation to liberation theology was originally close. The movement has since branched: Dussel's later work has developed a substantial philosophy of economics and politics; Latin American feminist thinkers (María Lugones, Ofelia Schutte) have extended the framework; *decolonial thought* (Aníbal Quijano, Walter Mignolo, Catherine Walsh) shares much with the Philosophy of Liberation while developing its own distinctive vocabulary.`,
+  },
+  {
+    id: "logical-atomism",
+    slug: "logical-atomism",
+    name: "Logical Atomism",
+    eraStart: 1900,
+    eraEnd: 1930,
+    region: "european",
+    philosopherIds: ["russell", "wittgenstein"],
+    shortSummary:
+      "The brief but influential metaphysical program of the early Russell and the early Wittgenstein: reality is composed of logically simple facts; complex propositions are truth-functions of atomic ones; philosophy is logical analysis of language down to the atomic level.",
+    fullBody: `Logical Atomism is the metaphysical program developed by Bertrand Russell in the lectures he gave in London in 1918 (*The Philosophy of Logical Atomism*) and by Ludwig Wittgenstein in the *Tractatus Logico-Philosophicus* (1921). The two versions differ in significant ways, but the shared structure is unmistakable.
+
+The central claim: reality is composed of *atomic facts* (Russell) or *Sachverhalte* (Wittgenstein) — basic states of affairs that cannot be analyzed into simpler facts. Complex propositions are truth-functions of atomic propositions, and complex facts in the world are composed of atomic facts. Logical analysis of language — Russell developed the *theory of descriptions* as a model — reveals the underlying structure that ordinary language obscures.
+
+The program lasted barely a decade. Wittgenstein himself abandoned it in his later work, where language games and forms of life replace the picture theory of meaning. Russell shifted his positions repeatedly through the 1920s and 30s. The Vienna Circle inherited the methodology (logical analysis of language; the world as composed of logically simple facts) without the substantive metaphysics.
+
+But the longer arc is real. The *form* of analytic philosophy — taking sentences apart, asking what their logical form is, asking what the world has to be like for them to be true — was given enduring shape by the Logical Atomist moment, even where subsequent analytic philosophy rejected its specific theses.`,
+  },
+  {
     id: "buddhism-umbrella",
     slug: "buddhism",
     name: "Buddhism (umbrella)",

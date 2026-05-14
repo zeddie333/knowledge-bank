@@ -61,6 +61,13 @@ export const SCHOOL_IMAGES: Record<string, string> = {
   "transhumanism": wikiImage("DNA_double_helix_horizontal.png"),
   "mysticism": wikiImage("Hildegard.jpg"),
   "buddhism": wikiImage("Buddha_in_Sarnath_Museum_(Dhammajak_Mutra).jpg"),
+  // Round-2
+  "process-philosophy": wikiImage("Alfred_North_Whitehead_in_1936.jpg"),
+  "pyrrhonism": wikiImage("Pyrrho_in_Thomas_Stanley_History_of_Philosophy.jpg"),
+  "jainism": wikiImage("Jain_temple_Aharji_Tikamgarh.jpg"),
+  "critical-race-theory": wikiImage("Kimberlé_Williams_Crenshaw_2018.jpg"),
+  "liberation-philosophy": wikiImage("Enrique_Dussel_(retrato).jpg"),
+  "logical-atomism": wikiImage("Bertrand_Russell_1957.jpg"),
 };
 
 export const CONCEPT_IMAGES: Record<string, string> = {
@@ -121,6 +128,16 @@ export const CONCEPT_IMAGES: Record<string, string> = {
   "determinism": wikiImage("Pierre-Simon_Laplace.jpg"),
   "absurdism": wikiImage("Albert_Camus,_gagnant_de_prix_Nobel,_portrait_en_buste,_posé_au_bureau,_faisant_face_à_gauche,_cigarette_de_tabagisme.jpg"),
   "consciousness": wikiImage("Synapse_diag1.svg"),
+  // Round-2
+  "authenticity": wikiImage("Heidegger_2_(1960).jpg"),
+  "forms-of-life": wikiImage("35._Portrait_of_Wittgenstein.jpg"),
+  "family-resemblance": wikiImage("35._Portrait_of_Wittgenstein.jpg"),
+  "a-priori": wikiImage("Immanuel_Kant_(painted_portrait).jpg"),
+  "universals": wikiImage("\"The_School_of_Athens\"_by_Raffaello_Sanzio_da_Urbino.jpg"),
+  "truth": wikiImage("Aristotle_Altemps_Inv8575.jpg"),
+  "modality": wikiImage("Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_(ca._1695).jpg"),
+  "beauty": wikiImage("Sandro_Botticelli_-_La_nascita_di_Venere.jpg"),
+  "i-thou": wikiImage("Martin_Buber_portrait.jpg"),
 };
 
 export const TE_IMAGES: Record<string, string> = {
@@ -143,6 +160,13 @@ export const TE_IMAGES: Record<string, string> = {
   "teletransporter": wikiImage("Star_trek_transporter.jpg"),
   "molyneuxs-question": wikiImage("Cube_and_sphere.png"),
   "demon-of-eternal-recurrence": wikiImage("Ouroboros.png"),
+  // Round-2
+  "sorites-paradox": wikiImage("Sand_dune_in_Mauritania_-_NASA.jpg"),
+  "newcombs-problem": wikiImage("Two_boxes.png"),
+  "the-drowning-child": wikiImage("Children_pond.jpg"),
+  "the-lottery-paradox": wikiImage("Lottery_balls.jpg"),
+  "sleeping-beauty-problem": wikiImage("Sleeping_beauty_dollification.png"),
+  "the-last-man": wikiImage("Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg"),
 };
 
 export function schoolImage(slug: string): string | null {
